@@ -1,33 +1,29 @@
-import { useState } from "react";
-import { Experience } from "./components/Experience.tsx";
-import { Hero } from "./components/Hero.tsx";
-import { Nav } from "./components/Nav.tsx";
-import { Projects } from "./components/Projects.tsx";
-import { Skills } from "./components/Skills.tsx";
-import { Studies } from "./components/Studies.tsx";
-import { profile } from "./data/cv.ts";
+import { Education } from "./components/education/Education.tsx";
+import { Experience } from "./components/experience/Experience.tsx";
+import { Hero } from "./components/hero/Hero.tsx";
+import { Footer } from "./components/layout/Footer.tsx";
+import { Nav } from "./components/layout/Nav.tsx";
+import { Projects } from "./components/projects/Projects.tsx";
+import { Skills } from "./components/skills/Skills.tsx";
+import { useSkillFilter } from "./hooks/useSkillFilter.ts";
+import { CONTAINER } from "./styles/ui.ts";
 
-export default function App() {
-  // One selected skill highlights every role and project that uses it.
-  const [skill, setSkill] = useState<string | null>(null);
-  const toggleSkill = (s: string) => setSkill((cur) => (cur === s ? null : s));
+const App = () => {
+  const { selected, toggle } = useSkillFilter();
 
   return (
     <>
       <Nav />
-      <main>
+      <main className={CONTAINER}>
         <Hero />
-        <Skills selected={skill} onSelect={toggleSkill} />
-        <Experience selected={skill} onSelect={toggleSkill} />
-        <Projects selected={skill} onSelect={toggleSkill} />
-        <Studies />
+        <Skills selected={selected} onSelect={toggle} />
+        <Experience selected={selected} onSelect={toggle} />
+        <Projects selected={selected} onSelect={toggle} />
+        <Education />
       </main>
-      <footer className="footer">
-        <p>
-          © {new Date().getFullYear()} {profile.name} ·{" "}
-          <a href={`mailto:${profile.email}`}>{profile.email}</a>
-        </p>
-      </footer>
+      <Footer />
     </>
   );
-}
+};
+
+export default App;
