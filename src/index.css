@@ -161,6 +161,39 @@ main,
   margin: 0;
 }
 
+.hiring {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.hiring__title {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-right: 4px;
+}
+
+.hiring__title::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--personal);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--personal) 25%, transparent);
+}
+
+.hiring__chip {
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  font-size: 14px;
+}
+
 .hero__actions,
 .links {
   display: flex;

@@ -17,6 +17,14 @@ export function Hero() {
       </h1>
       <p className="hero__role">{profile.role}</p>
       <p className="hero__summary">{profile.summary}</p>
+      <div className="hiring">
+        <span className="hiring__title">Open to work as</span>
+        {profile.hiring.map((h) => (
+          <span key={h.label} className="hiring__chip">
+            <strong>{h.label}</strong> · {h.detail}
+          </span>
+        ))}
+      </div>
       <div className="hero__actions">
         <a className="btn btn--primary" href={`mailto:${profile.email}`}>
           Get in touch

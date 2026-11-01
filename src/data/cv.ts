@@ -9,6 +9,10 @@ export const profile = {
   email: "moldovan_alexandru97@yahoo.com",
   github: "https://github.com/MoldovanAlexandruVasile",
   languages: ["Romanian (native)", "English"],
+  hiring: [
+    { label: "Employee", detail: "CIM (Contract Individual de Muncă)" },
+    { label: "Contractor", detail: "B2B / freelance" },
+  ],
 };
 
 export type Job = {
