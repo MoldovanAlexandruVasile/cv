@@ -1,8 +1,10 @@
 import { jobs } from "../data/jobs.ts";
 import { projects } from "../data/projects.ts";
 
-export const STATS = [
-  { value: "7+", label: "years in frontend" },
-  { value: String(jobs.length), label: "roles, intern to lead" },
-  { value: String(projects.length), label: "projects featured" },
+export type StatId = "years" | "roles" | "projects";
+
+export const STATS: { id: StatId; value: string }[] = [
+  { id: "years", value: "7+" },
+  { id: "roles", value: String(jobs.length) },
+  { id: "projects", value: String(projects.length) },
 ];

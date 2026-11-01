@@ -5,11 +5,13 @@ import { Footer } from "./components/layout/Footer.tsx";
 import { Nav } from "./components/layout/Nav.tsx";
 import { Projects } from "./components/projects/Projects.tsx";
 import { Skills } from "./components/skills/Skills.tsx";
+import { useDocumentLanguage } from "./hooks/useDocumentLanguage.ts";
 import { useSkillFilter } from "./hooks/useSkillFilter.ts";
 import { CONTAINER } from "./styles/ui.ts";
 
 const App = () => {
   const { selected, toggle } = useSkillFilter();
+  useDocumentLanguage();
 
   return (
     <>

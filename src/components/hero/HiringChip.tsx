@@ -1,7 +1,7 @@
-import type { HiringOption } from "../../types/cv.ts";
+import type { HiringText } from "../../types/content.ts";
 
 type HiringChipProps = {
-  option: HiringOption;
+  option: HiringText;
 };
 
 export const HiringChip = ({ option }: HiringChipProps) => (

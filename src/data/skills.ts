@@ -1,27 +1,14 @@
 import type { SkillGroup } from "../types/cv.ts";
 
+// Skill names are technologies, so they stay the same in every language.
 export const skillGroups: SkillGroup[] = [
   {
-    name: "Frontend",
-    skills: [
-      "TypeScript",
-      "React",
-      "React Router",
-      "Vite",
-      "VueJS",
-      "React Native",
-      "Electron",
-    ],
+    id: "frontend",
+    skills: ["TypeScript", "React", "React Router", "Vite", "VueJS", "React Native", "Electron"],
   },
-  {
-    name: "Styling & UI",
-    skills: ["Material-UI", "Tailwind CSS", "Shadcn/UI", "WCAG"],
-  },
-  {
-    name: "Data & APIs",
-    skills: ["TanStack Query", "GraphQL", "Axios", "WebSockets"],
-  },
-  { name: "State", skills: ["Jotai", "Redux", "Recoil"] },
-  { name: "Testing", skills: ["Vitest", "Jest", "Cypress"] },
-  { name: "Leadership", skills: ["People Lead", "Team Management"] },
+  { id: "styling", skills: ["Material-UI", "Tailwind CSS", "Shadcn/UI", "WCAG"] },
+  { id: "data", skills: ["TanStack Query", "GraphQL", "Axios", "WebSockets"] },
+  { id: "state", skills: ["Jotai", "Redux", "Recoil"] },
+  { id: "testing", skills: ["Vitest", "Jest", "Cypress"] },
+  { id: "leadership", skills: ["People Lead", "Team Management"] },
 ];

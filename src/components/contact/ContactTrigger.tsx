@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { BUTTON_PRIMARY } from "../../styles/ui.ts";
 
 type ContactTriggerProps = {
@@ -5,8 +6,12 @@ type ContactTriggerProps = {
   onToggle: () => void;
 };
 
-export const ContactTrigger = ({ open, onToggle }: ContactTriggerProps) => (
-  <button className={BUTTON_PRIMARY} aria-haspopup="menu" aria-expanded={open} onClick={onToggle}>
-    Get in touch
-  </button>
-);
+export const ContactTrigger = ({ open, onToggle }: ContactTriggerProps) => {
+  const { t } = useTranslation();
+
+  return (
+    <button className={BUTTON_PRIMARY} aria-haspopup="menu" aria-expanded={open} onClick={onToggle}>
+      {t("contact.trigger")}
+    </button>
+  );
+};

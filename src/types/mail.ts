@@ -1,4 +1,6 @@
+export type MailApp = "gmail" | "outlook" | "emailApp";
+
 export type MailOption = {
-  label: string;
+  app: MailApp;
   href: string;
 };

@@ -1,3 +1,4 @@
+import { useContent } from "../../hooks/useContent.ts";
 import { SURFACE } from "../../styles/ui.ts";
 import type { Job } from "../../types/cv.ts";
 import type { SkillFilterProps } from "../../types/skillFilter.ts";
@@ -13,10 +14,15 @@ type JobItemProps = SkillFilterProps & {
   onToggle: () => void;
 };
 
-export const JobItem = ({ job, open, onToggle, selected, onSelect }: JobItemProps) => (
-  <li className={classNames(SURFACE, "relative", skillMatchClass(job.tags, selected))}>
-    <TimelineDot filled={open} />
-    <JobHeader job={job} open={open} onToggle={onToggle} />
-    <JobDetails job={job} open={open} selected={selected} onSelect={onSelect} />
-  </li>
-);
+export const JobItem = ({ job, open, onToggle, selected, onSelect }: JobItemProps) => {
+  const { jobs } = useContent();
+  const text = jobs[job.id];
+
+  return (
+    <li className={classNames(SURFACE, "relative", skillMatchClass(job.tags, selected))}>
+      <TimelineDot filled={open} />
+      <JobHeader job={job} text={text} open={open} onToggle={onToggle} />
+      <JobDetails points={text.points} tags={job.tags} open={open} selected={selected} onSelect={onSelect} />
+    </li>
+  );
+};

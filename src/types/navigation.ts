@@ -1,4 +1,1 @@
-export type NavLink = {
-  id: string;
-  label: string;
-};
+export type NavId = "skills" | "experience" | "projects" | "education";

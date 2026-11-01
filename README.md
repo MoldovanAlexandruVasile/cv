@@ -12,10 +12,19 @@ npm run build    # → dist/
 
 ## Edit the content
 
-Everything shown on the page lives in `src/data/`, one file per topic:
-`profile.ts`, `jobs.ts`, `projects.ts`, `skills.ts`, `education.ts` and
-`certifications.ts`. The Shiftify screenshots in `public/media` come from the
-`shiftify-website` repo.
+The page is in English and Romanian (react-i18next). The visitor's browser
+language picks the default; the header dropdown switches and remembers it.
+
+- **Words** live in `src/i18n/locales/{en,ro}/`: `ui.ts` for interface text,
+  `content.ts` for the CV itself (roles, projects, summary…), keyed by id.
+- **Structure** lives in `src/data/`: ids, companies, dates (`YYYY-MM`), tags,
+  links and images.
+
+To add a role or project, add it to `src/data/` and add its text under the same
+id in both `content.ts` files. English is the reference: `tsc` fails if a `t()`
+key or a Romanian UI key is missing.
+
+The Shiftify screenshots in `public/media` come from the `shiftify-website` repo.
 
 ## Code layout
 
@@ -27,6 +36,7 @@ Everything shown on the page lives in `src/data/`, one file per topic:
 | `src/utils`           | Pure helpers: class names, clipboard, mail links, scroll…   |
 | `src/constants`       | Nav links, project filters, header stats, layout offsets    |
 | `src/types`           | Shared TypeScript types                                     |
+| `src/i18n`            | i18next setup and the English / Romanian translations       |
 
 ## Deploy
 

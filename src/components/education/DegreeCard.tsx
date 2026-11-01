@@ -1,4 +1,4 @@
-import type { Education } from "../../types/cv.ts";
+import { useContent } from "../../hooks/useContent.ts";
 import { Card } from "../common/Card.tsx";
 import { CardTagline } from "../common/CardTagline.tsx";
 import { CardText } from "../common/CardText.tsx";
@@ -6,14 +6,18 @@ import { CardTitle } from "../common/CardTitle.tsx";
 import { KindLabel } from "../common/KindLabel.tsx";
 
 type DegreeCardProps = {
-  education: Education;
+  period: string;
 };
 
-export const DegreeCard = ({ education }: DegreeCardProps) => (
-  <Card>
-    <KindLabel variant="academic">{education.period}</KindLabel>
-    <CardTitle>{education.degree}</CardTitle>
-    <CardTagline>{education.school}</CardTagline>
-    <CardText>{education.note}</CardText>
-  </Card>
-);
+export const DegreeCard = ({ period }: DegreeCardProps) => {
+  const { education } = useContent();
+
+  return (
+    <Card>
+      <KindLabel variant="academic">{period}</KindLabel>
+      <CardTitle>{education.degree}</CardTitle>
+      <CardTagline>{education.school}</CardTagline>
+      <CardText>{education.note}</CardText>
+    </Card>
+  );
+};

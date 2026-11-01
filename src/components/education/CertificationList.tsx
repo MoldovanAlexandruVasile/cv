@@ -3,5 +3,5 @@ import { CertificationCard } from "./CertificationCard.tsx";
 
 export const CertificationList = () =>
   certifications.map((certification) => (
-    <CertificationCard key={certification.name} certification={certification} />
+    <CertificationCard key={certification.id} certification={certification} />
   ));

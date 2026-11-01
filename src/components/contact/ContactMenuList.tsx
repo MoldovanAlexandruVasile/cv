@@ -15,7 +15,7 @@ export const ContactMenuList = ({ email, onPick }: ContactMenuListProps) => (
   >
     <ContactMenuHeader email={email} />
     {buildMailOptions(email).map((option) => (
-      <MailOptionLink key={option.label} option={option} onPick={onPick} />
+      <MailOptionLink key={option.app} option={option} onPick={onPick} />
     ))}
     <CopyEmailButton email={email} />
   </div>

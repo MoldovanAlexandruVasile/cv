@@ -1,14 +1,14 @@
-import { NAV_LINKS, SECTION_IDS } from "../../constants/navigation.ts";
+import { NAV_IDS } from "../../constants/navigation.ts";
 import { useActiveSection } from "../../hooks/useActiveSection.ts";
 import { NavItem } from "./NavItem.tsx";
 
 export const NavLinks = () => {
-  const active = useActiveSection(SECTION_IDS);
+  const active = useActiveSection(NAV_IDS);
 
   return (
     <nav className="ml-auto flex gap-1 max-md:hidden">
-      {NAV_LINKS.map((link) => (
-        <NavItem key={link.id} link={link} active={active === link.id} />
+      {NAV_IDS.map((id) => (
+        <NavItem key={id} id={id} active={active === id} />
       ))}
     </nav>
   );

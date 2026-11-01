@@ -2,13 +2,17 @@ import { classNames } from "../../utils/classNames.ts";
 
 type ChevronProps = {
   open: boolean;
+  // "right" turns down when open (accordions); "down" flips up when open (dropdowns).
+  direction?: "right" | "down";
+  className?: string;
 };
 
-export const Chevron = ({ open }: ChevronProps) => (
+export const Chevron = ({ open, direction = "right", className }: ChevronProps) => (
   <span
     className={classNames(
-      "col-start-2 row-span-3 row-start-1 self-center text-2xl text-muted transition-transform duration-200",
-      open && "rotate-90",
+      "leading-none text-muted transition-transform duration-200",
+      direction === "right" ? (open ? "rotate-90" : "") : open ? "-rotate-90" : "rotate-90",
+      className,
     )}
     aria-hidden
   >
