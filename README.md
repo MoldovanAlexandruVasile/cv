@@ -32,7 +32,7 @@ The Shiftify screenshots in `public/media` come from the `shiftify-website` repo
 | --------------------- | ----------------------------------------------------------- |
 | `src/components/*`    | One component per file, grouped by page section             |
 | `src/components/common` | Shared building blocks (section, tags, buttons)           |
-| `src/hooks`           | Custom hooks: theme, active section, carousel, dismiss…     |
+| `src/hooks`           | Custom hooks: theme, language, carousel, dismiss…          |
 | `src/utils`           | Pure helpers: class names, clipboard, mail links, scroll…   |
 | `src/constants`       | Nav links, project filters, header stats, layout offsets    |
 | `src/types`           | Shared TypeScript types                                     |

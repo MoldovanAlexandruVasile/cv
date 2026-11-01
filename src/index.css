@@ -48,9 +48,8 @@
 @layer base {
   html {
     scroll-behavior: smooth;
-    /* Room for the sticky header when jumping to a section. The active-section
-       highlight reads this value too (src/utils/scroll.ts). Phones get the
-       extra row of section tabs. */
+    /* Room for the sticky header when jumping to a section.
+       Phones get the extra row of section tabs. */
     scroll-padding-top: 80px;
 
     @media (width < 48rem) {
