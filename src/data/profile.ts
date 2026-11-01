@@ -3,7 +3,7 @@ import type { Profile } from "../types/cv.ts";
 
 export const profile: Profile = {
   name: "Alexandru-Vasile Moldovan",
-  role: "Senior Frontend Developer · Contractor",
+  role: "Senior Frontend Developer",
   location: "Târgu Mureș, Romania",
   summary:
     "Frontend engineer with 7+ years building regulated, high-traffic web platforms for UK and US clients, now working as an independent contractor. I write React and TypeScript, shape architecture through ADRs, and have led and grown frontend teams as a People Lead.",

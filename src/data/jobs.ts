@@ -3,7 +3,7 @@ import type { Job } from "../types/cv.ts";
 export const jobs: Job[] = [
   {
     id: "gaming-factory",
-    title: "Senior Frontend Developer · Contractor",
+    title: "Senior Frontend Developer",
     company: "Gaming Factory Limited",
     start: "Nov 2026",
     end: "Present",
