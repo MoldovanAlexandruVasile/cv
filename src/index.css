@@ -630,6 +630,28 @@ main,
   margin-top: 6px;
 }
 
+.cert__thumb {
+  display: block;
+  /* Pinned to the bottom with its button, so thumbnails line up across cards. */
+  margin-top: auto;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+}
+
+.cert__thumb img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1600 / 1190;
+  object-fit: cover;
+}
+
+.card .cert__thumb + .links {
+  margin-top: 0;
+  padding-top: 16px;
+  justify-content: center;
+}
+
 .card .links {
   margin-top: auto;
   padding-top: 20px;

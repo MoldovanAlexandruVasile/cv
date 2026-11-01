@@ -15,7 +15,22 @@ export function Studies() {
           <article key={c.name} className="card">
             <span className="kind">{c.date}</span>
             <h3>{c.name}</h3>
-            <p className="card__tagline">{c.issuer} · online course</p>
+            <p className="card__tagline">
+              {c.issuer} · {c.platform ?? "online course"}
+              {c.hours && ` · ${c.hours} hours`}
+            </p>
+            {c.image && (
+              <a className="cert__thumb" href={c.url ?? c.image} target="_blank" rel="noreferrer">
+                <img src={c.image} alt={`${c.name} certificate of completion`} loading="lazy" />
+              </a>
+            )}
+            {c.url && (
+              <div className="links">
+                <a className="btn" href={c.url} target="_blank" rel="noreferrer">
+                  Verify certificate ↗
+                </a>
+              </div>
+            )}
           </article>
         ))}
         <article className="card">

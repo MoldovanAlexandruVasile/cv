@@ -1,7 +1,7 @@
 import { jobs, profile, projects } from "../data/cv.ts";
 
 const stats = [
-  { value: "7+", label: "years at Zenitech" },
+  { value: "7+", label: "years in frontend" },
   { value: String(jobs.length), label: "roles, intern to lead" },
   { value: String(projects.length), label: "projects featured" },
 ];
@@ -18,7 +18,7 @@ export function Hero() {
       <p className="hero__role">{profile.role}</p>
       <p className="hero__summary">{profile.summary}</p>
       <div className="hiring">
-        <span className="hiring__title">Open to work as</span>
+        <span className="hiring__title">Available as</span>
         {profile.hiring.map((h) => (
           <span key={h.label} className="hiring__chip">
             <strong>{h.label}</strong> · {h.detail}

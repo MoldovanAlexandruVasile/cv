@@ -2,10 +2,10 @@
 
 export const profile = {
   name: "Alexandru-Vasile Moldovan",
-  role: "Senior Web Developer · People Lead",
+  role: "Senior Frontend Developer · Contractor",
   location: "Târgu Mureș, Romania",
   summary:
-    "Frontend engineer with 7+ years at Zenitech building regulated web platforms for UK iGaming and US healthcare clients. I write React and TypeScript, shape architecture through ADRs, and lead and grow frontend developers.",
+    "Frontend engineer with 7+ years building regulated, high-traffic web platforms for UK and US clients, now working as an independent contractor. I write React and TypeScript, shape architecture through ADRs, and have led and grown frontend teams as a People Lead.",
   email: "moldovan_alexandru97@yahoo.com",
   github: "https://github.com/MoldovanAlexandruVasile",
   languages: ["Romanian (native)", "English"],
@@ -27,6 +27,23 @@ export type Job = {
 };
 
 export const jobs: Job[] = [
+  {
+    id: "gaming-factory",
+    title: "Senior Frontend Developer · Contractor",
+    company: "Gaming Factory Limited",
+    start: "Nov 2026",
+    end: "Present",
+    headline:
+      "Frontend development for an online sports betting and casino product",
+    points: [
+      "Develop player-facing features and integrate third-party services such as live video, in-play statistics and promotional content.",
+      "Work on the operator tools behind the product: managing fixtures, games and tailored competitions, along with payments and bets.",
+      "Create internal tooling that gives developers and stakeholders visibility into feature rollout and automated test runs.",
+      "Deliver standalone landing pages for marketing campaigns.",
+      "Keep the codebase healthy through reviews, unit and end-to-end testing, and performance work, and agree priorities directly with stakeholders.",
+    ],
+    tags: ["React", "TypeScript", "Material-UI", "Redux", "Jest", "Cypress"],
+  },
   {
     id: "healthcare",
     title: "Senior Web Developer",
@@ -73,16 +90,16 @@ export const jobs: Job[] = [
     tags: ["People Lead", "Team Management"],
   },
   {
-    id: "igaming",
+    id: "consumer-platform",
     title: "Web Developer",
     company: "Zenitech",
     start: "Sep 2019",
     end: "Dec 2025",
-    headline: "Regulated UK iGaming platform: sportsbook & casino",
+    headline: "High-traffic consumer web platform in a regulated UK market",
     points: [
-      "Maintained and extended the betting app: moved class components to hooks, integrated live streaming, match trackers, dynamic banners and reCAPTCHA.",
+      "Maintained and extended the main customer-facing app: moved class components to hooks, integrated live streaming, real-time data widgets, dynamic banners and reCAPTCHA.",
       "Built an internal developer tool to track feature status and deeplinks, trigger Cypress E2E runs and toggle features through Jenkins.",
-      "Contributed to the Backoffice: event and casino-game management, bespoke competitions, payments and bets.",
+      "Contributed to the back office: content management, custom competitions for specific customers, payments and transactions.",
       "Built a single-page app for marketing campaigns.",
       "Led and supported developers through code ownership, worked with stakeholders on priorities and ran technical interviews for React roles.",
     ],
@@ -204,20 +221,20 @@ export const projects: Project[] = [
   },
   {
     id: "dev-tool",
-    name: "Feature Tracker Dev Tool",
+    name: "Release & Feature Dashboard",
     kind: "professional",
-    tagline: "Internal tool for an iGaming platform team.",
+    tagline: "Internal developer tool.",
     description:
-      "Tracks feature status, deeplinks and related tasks, triggers Cypress E2E runs and toggles features through Jenkins automations.",
+      "One place for developers and stakeholders to follow each feature's progress, jump to its deeplinks and tasks, kick off end-to-end test runs and switch features on or off through Jenkins jobs.",
     tags: ["React", "TypeScript", "Cypress", "Jenkins"],
   },
   {
     id: "backoffice",
-    name: "iGaming Backoffice",
+    name: "Operations Back Office",
     kind: "professional",
-    tagline: "Operations and business platform.",
+    tagline: "Admin platform for a high-traffic consumer product.",
     description:
-      "Managing events, casino games, bespoke competitions, payments and bets: the central system behind the sportsbook and casino.",
+      "Used daily by operators to set up and edit content, build custom competitions for specific customers, and oversee payments and transactions.",
     tags: ["React", "TypeScript", "Material-UI", "Jest", "Cypress"],
   },
   {
@@ -271,15 +288,35 @@ export const education = {
   note: "Java, Android, Python, Angular, C/C++ and Assembly. Thesis: ACCU, an Android app for tracking utility usage.",
 };
 
-export const certifications = [
+export type Certification = {
+  name: string;
+  issuer: string;
+  date: string;
+  platform?: string;
+  hours?: number;
+  url?: string;
+  image?: string;
+};
+
+export const certifications: Certification[] = [
   {
     name: "React Native – The Practical Guide",
     issuer: "Maximilian Schwarzmüller",
     date: "Oct 2026",
+    platform: "Udemy",
+    hours: 28.5,
+    url: "https://ude.my/UC-77345d4c-a8de-4293-b152-1deb576449f0",
+    image:
+      "https://udemy-certificate.s3.amazonaws.com/image/UC-77345d4c-a8de-4293-b152-1deb576449f0.jpg",
   },
   {
     name: "Vue – The Complete Guide (incl. Router & Composition API)",
     issuer: "Maximilian Schwarzmüller",
     date: "Nov 2024",
+    platform: "Udemy",
+    hours: 32,
+    url: "https://www.udemy.com/certificate/UC-cc1b62b4-f14e-4c0a-9e08-5ff1feea3cfa/",
+    image:
+      "https://udemy-certificate.s3.amazonaws.com/image/UC-cc1b62b4-f14e-4c0a-9e08-5ff1feea3cfa.jpg",
   },
 ];
