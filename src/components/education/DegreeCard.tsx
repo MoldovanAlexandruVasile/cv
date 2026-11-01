@@ -1,6 +1,8 @@
-import { CARD_TAGLINE, CARD_TEXT } from "../../styles/ui.ts";
 import type { Education } from "../../types/cv.ts";
 import { Card } from "../common/Card.tsx";
+import { CardTagline } from "../common/CardTagline.tsx";
+import { CardText } from "../common/CardText.tsx";
+import { CardTitle } from "../common/CardTitle.tsx";
 import { KindLabel } from "../common/KindLabel.tsx";
 
 type DegreeCardProps = {
@@ -10,8 +12,8 @@ type DegreeCardProps = {
 export const DegreeCard = ({ education }: DegreeCardProps) => (
   <Card>
     <KindLabel variant="academic">{education.period}</KindLabel>
-    <h3 className="mt-1.5 text-xl font-bold">{education.degree}</h3>
-    <p className={CARD_TAGLINE}>{education.school}</p>
-    <p className={CARD_TEXT}>{education.note}</p>
+    <CardTitle>{education.degree}</CardTitle>
+    <CardTagline>{education.school}</CardTagline>
+    <CardText>{education.note}</CardText>
   </Card>
 );

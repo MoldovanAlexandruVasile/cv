@@ -1,5 +1,6 @@
 import type { Certification } from "../../types/cv.ts";
 import { Card } from "../common/Card.tsx";
+import { CardTitle } from "../common/CardTitle.tsx";
 import { KindLabel } from "../common/KindLabel.tsx";
 import { CertificateThumbnail } from "./CertificateThumbnail.tsx";
 import { CertificationMeta } from "./CertificationMeta.tsx";
@@ -12,7 +13,7 @@ type CertificationCardProps = {
 export const CertificationCard = ({ certification }: CertificationCardProps) => (
   <Card>
     <KindLabel>{certification.date}</KindLabel>
-    <h3 className="mt-1.5 text-xl font-bold">{certification.name}</h3>
+    <CardTitle>{certification.name}</CardTitle>
     <CertificationMeta certification={certification} />
     {certification.image && (
       <CertificateThumbnail name={certification.name} image={certification.image} url={certification.url} />

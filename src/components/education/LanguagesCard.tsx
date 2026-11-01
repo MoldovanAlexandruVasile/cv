@@ -1,4 +1,5 @@
 import { Card } from "../common/Card.tsx";
+import { CardTitle } from "../common/CardTitle.tsx";
 import { KindLabel } from "../common/KindLabel.tsx";
 
 type LanguagesCardProps = {
@@ -8,6 +9,6 @@ type LanguagesCardProps = {
 export const LanguagesCard = ({ languages }: LanguagesCardProps) => (
   <Card>
     <KindLabel>Languages</KindLabel>
-    <h3 className="mt-1.5 text-xl font-bold">{languages.join(" · ")}</h3>
+    <CardTitle>{languages.join(" · ")}</CardTitle>
   </Card>
 );

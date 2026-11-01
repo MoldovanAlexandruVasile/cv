@@ -7,8 +7,6 @@ export const CONTAINER = "mx-auto max-w-[1080px] px-6 max-md:px-4";
 export const SURFACE =
   "rounded-2xl border bg-surface shadow-card transition-[opacity,border-color,translate] duration-200";
 
-export const CARD_GRID = "grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-4 max-md:grid-cols-1";
-
 export const ACTIONS = "flex flex-wrap gap-2.5";
 
 const BUTTON_BASE =
@@ -21,7 +19,3 @@ export const BUTTON_PRIMARY = `${BUTTON_BASE} border-accent bg-accent text-white
 export const buttonClass = (primary = false) => (primary ? BUTTON_PRIMARY : BUTTON);
 
 export const EYEBROW = "font-mono text-[11px] font-medium uppercase tracking-[0.08em]";
-
-export const CARD_TAGLINE = "mt-1.5 mb-3 font-medium";
-
-export const CARD_TEXT = "text-[15px] text-muted";

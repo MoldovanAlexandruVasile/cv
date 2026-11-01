@@ -1,5 +1,5 @@
 import type { ProjectImage } from "../../types/cv.ts";
-import { classNames } from "../../utils/classNames.ts";
+import { GallerySlide } from "./GallerySlide.tsx";
 
 type GallerySlidesProps = {
   images: ProjectImage[];
@@ -8,15 +8,4 @@ type GallerySlidesProps = {
 
 // All slides are stacked; only the current one is visible, so switching cross-fades.
 export const GallerySlides = ({ images, index }: GallerySlidesProps) =>
-  images.map((image, n) => (
-    <img
-      key={image.src}
-      src={image.src}
-      alt={image.alt}
-      loading="lazy"
-      className={classNames(
-        "absolute inset-0 size-full object-cover transition-opacity duration-350",
-        n === index ? "opacity-100" : "opacity-0",
-      )}
-    />
-  ));
+  images.map((image, n) => <GallerySlide key={image.src} image={image} visible={n === index} />);

@@ -1,5 +1,8 @@
 import type { Job } from "../../types/cv.ts";
-import { classNames } from "../../utils/classNames.ts";
+import { Chevron } from "../common/Chevron.tsx";
+import { JobDates } from "./JobDates.tsx";
+import { JobHeadline } from "./JobHeadline.tsx";
+import { JobTitle } from "./JobTitle.tsx";
 
 type JobHeaderProps = {
   job: Job;
@@ -13,21 +16,9 @@ export const JobHeader = ({ job, open, onToggle }: JobHeaderProps) => (
     aria-expanded={open}
     onClick={onToggle}
   >
-    <span className="font-mono text-xs font-medium text-accent">
-      {job.start} – {job.end}
-    </span>
-    <span className="col-start-1 text-lg font-semibold">
-      {job.title} <span className="font-normal text-muted">@ {job.company}</span>
-    </span>
-    <span className="col-start-1 text-sm text-muted">{job.headline}</span>
-    <span
-      className={classNames(
-        "col-start-2 row-span-3 row-start-1 self-center text-2xl text-muted transition-transform duration-200",
-        open && "rotate-90",
-      )}
-      aria-hidden
-    >
-      ›
-    </span>
+    <JobDates start={job.start} end={job.end} />
+    <JobTitle title={job.title} company={job.company} />
+    <JobHeadline headline={job.headline} />
+    <Chevron open={open} />
   </button>
 );

@@ -1,26 +1,15 @@
-import { jobs } from "../../data/jobs.ts";
-import { projects } from "../../data/projects.ts";
 import type { SkillFilterProps } from "../../types/skillFilter.ts";
-import { pluralize } from "../../utils/pluralize.ts";
-import { countWithSkill } from "../../utils/skillMatch.ts";
+import { ClearSkillButton } from "./ClearSkillButton.tsx";
+import { SkillUsage } from "./SkillUsage.tsx";
 
-const HINT = "mb-6 min-h-[1.6em] text-muted";
-
-export const SkillsHint = ({ selected, onSelect }: SkillFilterProps) => {
-  if (!selected) {
-    return <p className={HINT}>Pick a skill to highlight where I've used it.</p>;
-  }
-
-  const roles = countWithSkill(jobs, selected);
-  const builds = countWithSkill(projects, selected);
-
-  return (
-    <p className={HINT}>
-      <strong className="text-ink">{selected}</strong>: used in {roles} {pluralize(roles, "role")} and {builds}{" "}
-      {pluralize(builds, "project")}, highlighted below.{" "}
-      <button className="text-accent underline" onClick={() => onSelect(selected)}>
-        Clear
-      </button>
-    </p>
-  );
-};
+export const SkillsHint = ({ selected, onSelect }: SkillFilterProps) => (
+  <p className="mb-6 min-h-[1.6em] text-muted">
+    {selected ? (
+      <>
+        <SkillUsage skill={selected} /> <ClearSkillButton onClear={() => onSelect(selected)} />
+      </>
+    ) : (
+      "Pick a skill to highlight where I've used it."
+    )}
+  </p>
+);

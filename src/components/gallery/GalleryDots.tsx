@@ -1,5 +1,5 @@
 import type { ProjectImage } from "../../types/cv.ts";
-import { classNames } from "../../utils/classNames.ts";
+import { GalleryDot } from "./GalleryDot.tsx";
 
 type GalleryDotsProps = {
   images: ProjectImage[];
@@ -10,15 +10,7 @@ type GalleryDotsProps = {
 export const GalleryDots = ({ images, index, onPick }: GalleryDotsProps) => (
   <div className="flex justify-center gap-2">
     {images.map((image, n) => (
-      <button
-        key={image.src}
-        className={classNames(
-          "h-2 rounded-full transition-[width,background-color] duration-200",
-          n === index ? "w-6 bg-accent" : "w-2 bg-line",
-        )}
-        onClick={() => onPick(n)}
-        aria-label={`Show ${image.alt}`}
-      />
+      <GalleryDot key={image.src} label={image.alt} active={n === index} onClick={() => onPick(n)} />
     ))}
   </div>
 );
