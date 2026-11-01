@@ -3,7 +3,7 @@
 export const profile = {
   name: "Alexandru-Vasile Moldovan",
   role: "Senior Web Developer · People Lead",
-  location: "Cluj-Napoca / Târgu Mureș, Romania",
+  location: "Târgu Mureș, Romania",
   summary:
     "Frontend engineer with 7+ years at Zenitech building regulated web platforms for UK iGaming and US healthcare clients. I write React and TypeScript, shape architecture through ADRs, and lead and grow frontend developers.",
   email: "moldovan_alexandru97@yahoo.com",
@@ -37,7 +37,23 @@ export const jobs: Job[] = [
       "Got up to speed on WCAG quickly to deliver full accessibility compliance for a public-facing portal.",
       "Built a reusable feature-flag component on Sentry feature flags; Okta authentication; tests with Vitest and React Testing Library.",
     ],
-    tags: ["React", "TypeScript", "Vite", "React Router", "TanStack Query", "GraphQL", "Axios", "Jotai", "Tailwind CSS", "Shadcn/UI", "i18next", "Vitest", "Sentry", "Okta", "WCAG"],
+    tags: [
+      "React",
+      "TypeScript",
+      "Vite",
+      "React Router",
+      "TanStack Query",
+      "GraphQL",
+      "Axios",
+      "Jotai",
+      "Tailwind CSS",
+      "Shadcn/UI",
+      "i18next",
+      "Vitest",
+      "Sentry",
+      "Okta",
+      "WCAG",
+    ],
   },
   {
     id: "people-lead",
@@ -66,7 +82,18 @@ export const jobs: Job[] = [
       "Built a single-page app for marketing campaigns.",
       "Led and supported developers through code ownership, worked with stakeholders on priorities and ran technical interviews for React roles.",
     ],
-    tags: ["React", "TypeScript", "Material-UI", "Redux", "Recoil", "React Router", "Jest", "Cypress", "WebSockets", "Team Management"],
+    tags: [
+      "React",
+      "TypeScript",
+      "Material-UI",
+      "Redux",
+      "Recoil",
+      "React Router",
+      "Jest",
+      "Cypress",
+      "WebSockets",
+      "Team Management",
+    ],
   },
   {
     id: "qa",
@@ -88,7 +115,9 @@ export const jobs: Job[] = [
     start: "Jun 2018",
     end: "Sep 2018",
     headline: "Foundations of Android development",
-    points: ["Internship that laid the groundwork for my Bachelor's thesis app."],
+    points: [
+      "Internship that laid the groundwork for my Bachelor's thesis app.",
+    ],
     tags: ["Android", "Java"],
   },
   {
@@ -98,7 +127,9 @@ export const jobs: Job[] = [
     start: "May 2017",
     end: "Jul 2017",
     headline: "Testing processes and defect reporting",
-    points: ["First hands-on experience with QA practices on real software projects."],
+    points: [
+      "First hands-on experience with QA practices on real software projects.",
+    ],
     tags: ["QA"],
   },
 ];
@@ -114,7 +145,8 @@ export type Project = {
   images?: { src: string; alt: string }[];
 };
 
-const SHIFTIFY_SITE = "https://moldovanalexandruvasile.github.io/shiftify-website/";
+const SHIFTIFY_SITE =
+  "https://moldovanalexandruvasile.github.io/shiftify-website/";
 
 export const projects: Project[] = [
   {
@@ -124,10 +156,23 @@ export const projects: Project[] = [
     tagline: "Timesheets for freelancers, without the spreadsheet.",
     description:
       "An offline timesheet app for freelancers: log the days you work per client, take days off, and export a monthly timesheet to Excel or PDF. Bank holidays are applied automatically and everything stays on the device: no account, no backend. Built with Expo / React Native for mobile and Electron for Mac and Windows, with a React + Vite marketing site that serves signed auto-updating releases.",
-    tags: ["React Native", "Expo", "Electron", "TypeScript", "React", "Vite", "SQLite", "Jotai", "i18next"],
+    tags: [
+      "React Native",
+      "Expo",
+      "Electron",
+      "TypeScript",
+      "React",
+      "Vite",
+      "SQLite",
+      "Jotai",
+      "i18next",
+    ],
     links: [
       { label: "Visit the website", href: SHIFTIFY_SITE },
-      { label: "Website source", href: "https://github.com/MoldovanAlexandruVasile/shiftify-website" },
+      {
+        label: "Website source",
+        href: "https://github.com/MoldovanAlexandruVasile/shiftify-website",
+      },
     ],
     images: [
       { src: "media/01-check-in.jpg", alt: "Shiftify daily check-in" },
@@ -143,7 +188,15 @@ export const projects: Project[] = [
     tagline: "HIPAA-regulated, WCAG-compliant member portal.",
     description:
       "Portal-based architecture to preserve iframe state, multi-sticky-header layouts, a shared web/native toolkit and Sentry-backed feature flags.",
-    tags: ["React", "TypeScript", "Jotai", "TanStack Query", "GraphQL", "Tailwind CSS", "WCAG"],
+    tags: [
+      "React",
+      "TypeScript",
+      "Jotai",
+      "TanStack Query",
+      "GraphQL",
+      "Tailwind CSS",
+      "WCAG",
+    ],
   },
   {
     id: "dev-tool",
@@ -168,16 +221,39 @@ export const projects: Project[] = [
     name: "ACCU: Accountability of Utilities",
     kind: "academic",
     tagline: "Bachelor's thesis, Android app.",
-    description: "Tracks and manages monthly utility usage. Built for my graduation thesis at Babeș-Bolyai University.",
+    description:
+      "Tracks and manages monthly utility usage. Built for my graduation thesis at Babeș-Bolyai University.",
     tags: ["Android", "Java"],
-    links: [{ label: "Source on GitHub", href: "https://github.com/MoldovanAlexandruVasile/Licenta" }],
+    links: [
+      {
+        label: "Source on GitHub",
+        href: "https://github.com/MoldovanAlexandruVasile/Licenta",
+      },
+    ],
   },
 ];
 
 export const skillGroups: { name: string; skills: string[] }[] = [
-  { name: "Frontend", skills: ["TypeScript", "React", "React Router", "Vite", "VueJS", "React Native", "Electron"] },
-  { name: "Styling & UI", skills: ["Material-UI", "Tailwind CSS", "Shadcn/UI", "WCAG"] },
-  { name: "Data & APIs", skills: ["TanStack Query", "GraphQL", "Axios", "WebSockets"] },
+  {
+    name: "Frontend",
+    skills: [
+      "TypeScript",
+      "React",
+      "React Router",
+      "Vite",
+      "VueJS",
+      "React Native",
+      "Electron",
+    ],
+  },
+  {
+    name: "Styling & UI",
+    skills: ["Material-UI", "Tailwind CSS", "Shadcn/UI", "WCAG"],
+  },
+  {
+    name: "Data & APIs",
+    skills: ["TanStack Query", "GraphQL", "Axios", "WebSockets"],
+  },
   { name: "State", skills: ["Jotai", "Redux", "Recoil"] },
   { name: "Testing", skills: ["Vitest", "Jest", "Cypress"] },
   { name: "Leadership", skills: ["People Lead", "Team Management"] },
@@ -185,12 +261,21 @@ export const skillGroups: { name: string; skills: string[] }[] = [
 
 export const education = {
   degree: "Bachelor's Degree in Programming",
-  school: "Faculty of Mathematics and Computer Science, Babeș-Bolyai University",
+  school:
+    "Faculty of Mathematics and Computer Science, Babeș-Bolyai University",
   period: "2016 – 2019",
   note: "Java, Android, Python, Angular, C/C++ and Assembly. Thesis: ACCU, an Android app for tracking utility usage.",
 };
 
 export const certifications = [
-  { name: "React Native – The Practical Guide", issuer: "Maximilian Schwarzmüller", date: "Oct 2026" },
-  { name: "Vue – The Complete Guide (incl. Router & Composition API)", issuer: "Maximilian Schwarzmüller", date: "Nov 2024" },
+  {
+    name: "React Native – The Practical Guide",
+    issuer: "Maximilian Schwarzmüller",
+    date: "Oct 2026",
+  },
+  {
+    name: "Vue – The Complete Guide (incl. Router & Composition API)",
+    issuer: "Maximilian Schwarzmüller",
+    date: "Nov 2024",
+  },
 ];
