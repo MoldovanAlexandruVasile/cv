@@ -9,7 +9,7 @@ type SectionProps = {
 };
 
 export const Section = ({ id, title, aside, children }: SectionProps) => (
-  <section id={id} className="border-t border-line py-14">
+  <section id={id} className="border-t border-line py-14 max-md:py-10">
     <SectionHeader title={title} aside={aside} />
     {children}
   </section>

@@ -10,7 +10,12 @@ export const ContactTrigger = ({ open, onToggle }: ContactTriggerProps) => {
   const { t } = useTranslation();
 
   return (
-    <button className={BUTTON_PRIMARY} aria-haspopup="menu" aria-expanded={open} onClick={onToggle}>
+    <button
+      className={`${BUTTON_PRIMARY} max-md:w-full max-md:justify-center`}
+      aria-haspopup="menu"
+      aria-expanded={open}
+      onClick={onToggle}
+    >
       {t("contact.trigger")}
     </button>
   );

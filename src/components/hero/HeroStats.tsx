@@ -6,7 +6,7 @@ export const HeroStats = () => {
   const { t } = useTranslation();
 
   return (
-    <dl className="mt-14 flex flex-wrap gap-12 max-md:gap-7">
+    <dl className="mt-14 flex flex-wrap gap-12 max-md:mt-10 max-md:grid max-md:grid-cols-3 max-md:gap-4">
       {STATS.map((stat) => (
         <StatItem key={stat.id} value={stat.value} label={t(`hero.stats.${stat.id}`)} />
       ))}

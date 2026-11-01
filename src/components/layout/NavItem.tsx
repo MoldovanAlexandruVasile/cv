@@ -14,7 +14,7 @@ export const NavItem = ({ id, active }: NavItemProps) => {
     <a
       href={`#${id}`}
       className={classNames(
-        "rounded-full px-3 py-1.5 text-sm transition-colors duration-200",
+        "shrink-0 rounded-full px-3 py-1.5 text-sm transition-colors duration-200",
         active ? "bg-accent-soft font-semibold text-accent" : "font-medium text-muted hover:text-ink",
       )}
       aria-current={active ? "location" : undefined}

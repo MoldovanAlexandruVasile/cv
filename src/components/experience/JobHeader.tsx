@@ -14,7 +14,7 @@ type JobHeaderProps = {
 
 export const JobHeader = ({ job, text, open, onToggle }: JobHeaderProps) => (
   <button
-    className="grid w-full grid-cols-[1fr_auto] gap-x-4 gap-y-0.5 px-5 py-[18px] text-left"
+    className="grid w-full grid-cols-[1fr_auto] gap-x-4 gap-y-0.5 px-5 py-[18px] text-left max-md:gap-x-2 max-md:px-4 max-md:py-4"
     aria-expanded={open}
     onClick={onToggle}
   >

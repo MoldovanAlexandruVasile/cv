@@ -17,7 +17,7 @@ export const JobDetails = ({ points, tags, open, selected, onSelect }: JobDetail
       open ? "grid-rows-[1fr]" : "grid-rows-[0fr]",
     )}
   >
-    <div className={classNames("overflow-hidden px-5", open && "pb-5")}>
+    <div className={classNames("overflow-hidden px-5 max-md:px-4", open && "pb-5 max-md:pb-4")}>
       <JobPoints points={points} />
       <Tags tags={tags} selected={selected} onSelect={onSelect} />
     </div>

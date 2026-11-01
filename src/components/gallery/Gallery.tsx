@@ -13,7 +13,7 @@ export const Gallery = ({ images }: GalleryProps) => {
   const { index, next, previous, goTo } = useCarousel(images.length);
 
   return (
-    <div className="flex flex-col justify-center gap-3 bg-page p-5">
+    <div className="flex flex-col justify-center gap-3 bg-page p-5 max-md:p-3">
       <GalleryFrame>
         <GallerySlides images={images} index={index} />
         <GalleryArrow direction="prev" onClick={previous} />

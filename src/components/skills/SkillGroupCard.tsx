@@ -12,7 +12,7 @@ export const SkillGroupCard = ({ group, selected, onSelect }: SkillGroupCardProp
   const { skillGroups } = useContent();
 
   return (
-    <div className={`${SURFACE} border-line p-5`}>
+    <div className={`${SURFACE} border-line p-5 max-md:p-4`}>
       <h3 className="text-[13px] font-bold uppercase tracking-[0.06em] text-muted">{skillGroups[group.id]}</h3>
       <Tags tags={group.skills} selected={selected} onSelect={onSelect} className="mt-3" />
     </div>

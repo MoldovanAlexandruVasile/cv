@@ -10,7 +10,7 @@ type CardProps = {
 };
 
 export const Card = ({ stateClass = "border-line", className, children }: CardProps) => (
-  <article className={classNames(SURFACE, "flex flex-col p-6 hover:-translate-y-0.5", stateClass, className)}>
+  <article className={classNames(SURFACE, "flex flex-col p-6 hover:-translate-y-0.5 max-md:p-5", stateClass, className)}>
     {children}
   </article>
 );

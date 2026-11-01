@@ -12,7 +12,7 @@ export const Hero = () => {
   const { profile: text } = useContent();
 
   return (
-    <section className="pt-24 pb-16 max-md:pt-14 max-md:pb-10" id="top">
+    <section className="pt-24 pb-16 max-md:pt-10 max-md:pb-10" id="top">
       <HeroLocation location={text.location} />
       <HeroName name={profile.name} />
       <HeroRole role={text.role} />

@@ -3,7 +3,7 @@ type JobPointsProps = {
 };
 
 export const JobPoints = ({ points }: JobPointsProps) => (
-  <ul className="list-disc space-y-1.5 pl-[18px] text-muted">
+  <ul className="list-disc space-y-1.5 pl-[18px] text-muted max-md:text-[15px]">
     {points.map((point) => (
       <li key={point}>{point}</li>
     ))}

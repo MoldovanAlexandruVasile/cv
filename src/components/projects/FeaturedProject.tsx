@@ -26,7 +26,7 @@ export const FeaturedProject = ({ project, selected, onSelect }: FeaturedProject
       )}
     >
       <Gallery images={withAltText(project.images, text.images)} />
-      <div className="p-7">
+      <div className="p-7 max-md:p-5">
         <ProjectSummary kind={project.kind} text={text} featured />
         <Tags tags={project.tags} selected={selected} onSelect={onSelect} />
         <ProjectLinks links={project.links} labels={text.links} className="mt-7" />

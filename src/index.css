@@ -48,8 +48,14 @@
 @layer base {
   html {
     scroll-behavior: smooth;
-    /* Keep in sync with SCROLL_OFFSET in src/constants/layout.ts. */
+    /* Room for the sticky header when jumping to a section. The active-section
+       highlight reads this value too (src/utils/scroll.ts). Phones get the
+       extra row of section tabs. */
     scroll-padding-top: 80px;
+
+    @media (width < 48rem) {
+      scroll-padding-top: 124px;
+    }
   }
 
   body {
