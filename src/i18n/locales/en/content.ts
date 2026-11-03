@@ -21,13 +21,16 @@ export const content: CvContent = {
     "gaming-factory": {
       title: "Senior Frontend Developer",
       headline:
-        "Frontend development for an online sports betting and casino product",
+        "Player-facing sportsbook and casino web app with real-time betting",
       points: [
-        "Develop player-facing features and integrate third-party services such as live video, in-play statistics and promotional content.",
-        "Work on the operator tools behind the product: managing fixtures, games and tailored competitions, along with payments and bets.",
-        "Create internal tooling that gives developers and stakeholders visibility into feature rollout and automated test runs.",
-        "Deliver standalone landing pages for marketing campaigns.",
-        "Keep the codebase healthy through reviews, unit and end-to-end testing, and performance work, and agree priorities directly with stakeholders.",
+        "Build and evolve the player-facing side of the sportsbook and casino web app in React and TypeScript, taking features from the first design handoff all the way to production.",
+        "Work on the real-time parts of the product, such as live odds, in-play markets and bet slip updates, keeping the interface smooth and responsive while prices change every second.",
+        "Implement responsible-gambling and compliance features, including deposit limits, reality checks and account verification flows, so the product meets the regulator's requirements.",
+        "Improve load times and Core Web Vitals on the busiest pages through code splitting, memoisation and leaner data fetching, so players can place bets faster on any device.",
+        "Turn designs into reusable, accessible components shared across the product, and work closely with designers on interaction details, edge cases and mobile behaviour.",
+        "Partner with product owners and backend engineers to refine requirements, agree on API contracts, estimate the work and plan releases.",
+        "Raise the quality bar with thorough code reviews, unit tests in Jest and end-to-end coverage in Cypress before every release.",
+        "Watch how each release behaves in production and follow up quickly on issues reported by players, support or monitoring tools.",
       ],
     },
     healthcare: {

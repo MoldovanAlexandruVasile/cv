@@ -22,13 +22,16 @@ export const content: CvContent = {
     "gaming-factory": {
       title: "Senior Frontend Developer",
       headline:
-        "Dezvoltare frontend pentru o platformă online de pariuri sportive și cazinou",
+        "Aplicație web de pariuri sportive și cazinou pentru jucători, cu pariere în timp real",
       points: [
-        "Dezvolt funcționalități destinate jucătorilor și integrez servicii externe, precum transmisiuni video live, statistici în timp real din timpul meciurilor și conținut promoțional.",
-        "Lucrez la instrumentele folosite de operatori pentru gestionarea evenimentelor sportive, a jocurilor și a competițiilor personalizate, precum și a plăților și pariurilor.",
-        "Construiesc unelte interne care le oferă dezvoltatorilor și echipelor de business o imagine clară asupra lansării funcționalităților și a rezultatelor testelor automate.",
-        "Realizez landing page-uri dedicate campaniilor de marketing.",
-        "Mențin calitatea codului prin code review, teste unitare și end-to-end și optimizări de performanță, iar prioritățile le stabilesc direct cu stakeholderii.",
+        "Construiesc și dezvolt partea dedicată jucătorilor a aplicației web de pariuri sportive și cazinou, în React și TypeScript, ducând funcționalitățile de la preluarea designului până în producție.",
+        "Lucrez la componentele în timp real ale produsului, precum cotele live, piețele in-play și actualizarea biletului de pariere, astfel încât interfața să rămână fluidă chiar dacă prețurile se schimbă de la o secundă la alta.",
+        "Implementez funcționalitățile de joc responsabil și de conformitate, precum limitele de depunere, notificările de tip reality check și fluxurile de verificare a contului, ca produsul să respecte cerințele autorității de reglementare.",
+        "Optimizez timpii de încărcare și indicatorii Core Web Vitals pe paginile cele mai accesate, prin code splitting, memoizare și o preluare mai eficientă a datelor, ca jucătorii să parieze mai repede de pe orice dispozitiv.",
+        "Transform designul în componente reutilizabile și accesibile, folosite în tot produsul, și lucrez îndeaproape cu designerii la detaliile de interacțiune, la cazurile limită și la comportamentul pe mobil.",
+        "Colaborez cu product ownerii și cu echipa de backend pentru a clarifica cerințele, a stabili contractele API, a estima efortul și a planifica lansările.",
+        "Ridic standardul de calitate prin code review riguros, teste unitare cu Jest și teste end-to-end cu Cypress înainte de fiecare lansare.",
+        "Urmăresc cum se comportă fiecare lansare în producție și rezolv rapid problemele semnalate de jucători, de echipa de suport sau de instrumentele de monitorizare.",
       ],
     },
     healthcare: {
