@@ -1,4 +1,5 @@
 import { useContent } from "../../hooks/useContent.ts";
+import { useLanguage } from "../../hooks/useLanguage.ts";
 import { SURFACE } from "../../styles/ui.ts";
 import type { Project } from "../../types/cv.ts";
 import type { SkillFilterProps } from "../../types/skillFilter.ts";
@@ -16,6 +17,7 @@ type FeaturedProjectProps = SkillFilterProps & {
 
 export const FeaturedProject = ({ project, selected, onSelect }: FeaturedProjectProps) => {
   const text = useContent().projects[project.id];
+  const { language } = useLanguage();
 
   return (
     <article
@@ -25,7 +27,7 @@ export const FeaturedProject = ({ project, selected, onSelect }: FeaturedProject
         skillMatchClass(project.tags, selected),
       )}
     >
-      <Gallery images={withAltText(project.images, text.images)} />
+      <Gallery images={withAltText(project.images, text.images, language)} />
       <div className="p-7 max-md:p-5">
         <ProjectSummary kind={project.kind} text={text} featured />
         <Tags tags={project.tags} selected={selected} onSelect={onSelect} />
