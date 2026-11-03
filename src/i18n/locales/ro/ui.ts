@@ -6,16 +6,16 @@ export const ui = {
   meta: {
     title: "Alexandru-Vasile Moldovan · Senior Frontend Developer",
     description:
-      "Senior Frontend Developer. React, TypeScript și peste 7 ani de experiență în platforme web reglementate.",
+      "Senior Frontend Developer. React, TypeScript și peste 7 ani de experiență în dezvoltarea de platforme web reglementate.",
   },
   nav: {
     skills: "Competențe",
     experience: "Experiență",
     projects: "Proiecte",
-    education: "Educație",
+    education: "Studii",
   },
   theme: {
-    switchTo: "Comută pe modul {{mode}}",
+    switchTo: "Treci la modul {{mode}}",
     light: "luminos",
     dark: "întunecat",
   },
@@ -23,41 +23,41 @@ export const ui = {
     label: "Limba",
   },
   hero: {
-    availableAs: "Disponibil ca",
+    availableAs: "Disponibil pentru",
     github: "GitHub",
     seeProjects: "Vezi proiectele ↓",
     stats: {
-      years: "ani în frontend",
+      years: "ani de experiență în frontend",
       roles: "roluri, de la stagiar la lead",
       projects: "proiecte prezentate",
     },
   },
   contact: {
     trigger: "Contactează-mă",
-    writeWith: "Scrie din {{app}}",
+    writeWith: "Scrie-mi din {{app}}",
     apps: {
       gmail: "Gmail",
       outlook: "Outlook",
       emailApp: "aplicația de email",
     },
     copy: "Copiază adresa",
-    copied: "Copiat ✓",
+    copied: "Copiată ✓",
   },
   skills: {
     title: "Competențe",
     idle: "Alege o competență ca să vezi unde am folosit-o.",
-    usage: "apare în {{roles}} și {{projects}}, evidențiate mai jos.",
+    usage: "folosit în {{roles}} și {{projects}}, evidențiate mai jos.",
     roles_one: "{{count}} rol",
     roles_few: "{{count}} roluri",
     roles_other: "{{count}} de roluri",
     projects_one: "{{count}} proiect",
     projects_few: "{{count}} proiecte",
     projects_other: "{{count}} de proiecte",
-    clear: "Resetează",
+    clear: "Șterge selecția",
   },
   experience: {
     title: "Experiență",
-    present: "Prezent",
+    present: "prezent",
   },
   projects: {
     title: "Proiecte",
@@ -77,16 +77,16 @@ export const ui = {
   gallery: {
     previous: "Captura anterioară",
     next: "Captura următoare",
-    show: "Arată: {{label}}",
+    show: "Afișează: {{label}}",
   },
   education: {
-    title: "Educație și certificări",
+    title: "Studii și certificări",
     onlineCourse: "curs online",
     hours_one: "{{count, number}} oră",
     hours_few: "{{count, number}} ore",
     hours_other: "{{count, number}} de ore",
     verify: "Verifică certificatul ↗",
     certificateAlt: "Certificat de absolvire: {{name}}",
-    languages: "Limbi",
+    languages: "Limbi vorbite",
   },
 } satisfies UiMessages;

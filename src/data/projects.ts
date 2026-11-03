@@ -2,14 +2,14 @@ import type { Project } from "../types/cv.ts";
 
 export const projects: Project[] = [
   {
-    id: "shiftify",
+    id: "tivren",
     kind: "personal",
     tags: ["React Native", "Expo", "Electron", "TypeScript", "React", "Vite", "SQLite", "Jotai", "i18next"],
     links: [
-      { id: "website", href: "https://moldovanalexandruvasile.github.io/shiftify-website/" },
-      { id: "source", href: "https://github.com/MoldovanAlexandruVasile/shiftify-website" },
+      { id: "website", href: "https://moldovanalexandruvasile.github.io/tivren-website/" },
+      { id: "source", href: "https://github.com/MoldovanAlexandruVasile/tivren-website" },
     ],
-    // Alt texts are in content.projects.shiftify.images, in the same order.
+    // Alt texts are in content.projects.tivren.images, in the same order.
     images: [
       "media/01-check-in.jpg",
       "media/02-month-at-a-glance.jpg",

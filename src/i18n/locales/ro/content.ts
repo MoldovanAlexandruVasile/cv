@@ -1,111 +1,114 @@
 import type { CvContent } from "../../../types/content.ts";
 
+// Written to read naturally in Romanian, not translated word for word. Common IT
+// terms (code review, feature flags, stakeholderi…) stay in English, as Romanian
+// developers use them.
 export const content: CvContent = {
   profile: {
     role: "Senior Frontend Developer",
     location: "Târgu Mureș, România",
     summary:
-      "Inginer frontend cu peste 7 ani de experiență în platforme web reglementate, cu trafic ridicat, pentru clienți din Marea Britanie și SUA, acum colaborator independent. Scriu React și TypeScript, modelez arhitectura prin ADR-uri și am condus și dezvoltat echipe frontend ca People Lead.",
-    languages: ["Română (nativ)", "Engleză"],
+      "Dezvoltator frontend cu peste 7 ani de experiență în construirea de platforme web reglementate, cu trafic ridicat, pentru clienți din Marea Britanie și SUA. În prezent lucrez ca colaborator independent. Folosesc zilnic React și TypeScript, documentez deciziile de arhitectură prin ADR-uri, iar ca People Lead am îndrumat și sprijinit creșterea echipelor de frontend.",
+    languages: ["Română (limbă maternă)", "Engleză"],
     hiring: {
-      employee: { label: "Angajat", detail: "CIM (Contract Individual de Muncă)" },
-      contractor: { label: "Colaborator", detail: "B2B / freelance" },
+      employee: { label: "Angajare", detail: "CIM (Contract Individual de Muncă)" },
+      contractor: { label: "Colaborare", detail: "B2B / freelance" },
     },
   },
   jobs: {
     "gaming-factory": {
       title: "Senior Frontend Developer",
-      headline: "Dezvoltare frontend pentru un produs online de pariuri sportive și cazino",
+      headline: "Dezvoltare frontend pentru o platformă online de pariuri sportive și cazinou",
       points: [
-        "Dezvolt funcționalități pentru jucători și integrez servicii terțe precum video live, statistici în timp real și conținut promoțional.",
-        "Lucrez la instrumentele operatorilor din spatele produsului: gestionarea evenimentelor, a jocurilor și a competițiilor personalizate, plus plăți și pariuri.",
-        "Creez instrumente interne care oferă dezvoltatorilor și stakeholderilor vizibilitate asupra lansării funcționalităților și a testelor automate.",
-        "Livrez pagini de prezentare dedicate campaniilor de marketing.",
-        "Mențin codul sănătos prin code review, teste unitare și end-to-end și optimizări de performanță, și stabilesc prioritățile direct cu stakeholderii.",
+        "Dezvolt funcționalități destinate jucătorilor și integrez servicii externe, precum transmisiuni video live, statistici în timp real din timpul meciurilor și conținut promoțional.",
+        "Lucrez la instrumentele folosite de operatori pentru gestionarea evenimentelor sportive, a jocurilor și a competițiilor personalizate, precum și a plăților și pariurilor.",
+        "Construiesc unelte interne care le oferă dezvoltatorilor și echipelor de business o imagine clară asupra lansării funcționalităților și a rezultatelor testelor automate.",
+        "Realizez landing page-uri dedicate campaniilor de marketing.",
+        "Mențin calitatea codului prin code review, teste unitare și end-to-end și optimizări de performanță, iar prioritățile le stabilesc direct cu stakeholderii.",
       ],
     },
     healthcare: {
       title: "Senior Web Developer",
-      headline: "Portal pentru membri, conform HIPAA, pentru un client important din sistemul de sănătate american",
+      headline: "Portal pentru asigurați, conform HIPAA, pentru un client important din sistemul de sănătate din SUA",
       points: [
-        "Am coordonat sub-echipa noastră sub îndrumarea tech lead-ului, am construit funcționalități de bază și le-am conectat la endpoint-urile din backend.",
-        "Am redactat ADR-uri cheie: o arhitectură bazată pe portaluri, cu Jotai families și randare pe bază de chei, care păstrează starea iframe-urilor, și o strategie de layout pentru mai multe headere sticky.",
-        "Am impus un sistem de module feature-sliced cu eslint-plugin-boundaries și am contribuit la un toolkit comun care aliniază aplicațiile web și native.",
-        "M-am familiarizat rapid cu WCAG pentru a asigura accesibilitatea completă a unui portal public.",
-        "Am construit o componentă reutilizabilă de feature flags pe Sentry; autentificare cu Okta; teste cu Vitest și React Testing Library.",
+        "Am îndrumat subechipa din care făceam parte, sub coordonarea tech lead-ului, am implementat funcționalitățile de bază și le-am conectat la endpoint-urile din backend.",
+        "Am scris ADR-uri esențiale: unul pentru o arhitectură bazată pe portaluri, cu Jotai families și randare pe bază de key, care păstrează starea iframe-urilor, și altul pentru un layout cu mai multe headere sticky.",
+        "Am impus o arhitectură modulară de tip feature-sliced, verificată cu eslint-plugin-boundaries, și am contribuit la un toolkit comun, cu helperi și tipuri de date folosite atât în aplicația web, cât și în cea nativă.",
+        "M-am familiarizat rapid cu WCAG, ca portalul, fiind unul public, să respecte pe deplin standardele de accesibilitate.",
+        "Am construit o componentă reutilizabilă de feature flags, integrată cu Sentry, am lucrat cu autentificarea prin Okta și am scris teste cu Vitest și React Testing Library.",
       ],
     },
     "people-lead": {
       title: "People Lead",
-      headline: "Dezvoltarea și starea de bine a dezvoltatorilor frontend",
+      headline: "Creșterea profesională și starea de bine a echipei de frontend",
       points: [
-        "Am sprijinit dezvoltarea profesională a dezvoltatorilor frontend și alinierea lor cu obiectivele companiei.",
-        "Am condus evaluări de performanță, am gestionat nemulțumiri și am comunicat transparent deciziile companiei pentru a construi încredere.",
+        "Am sprijinit creșterea profesională a colegilor din frontend și i-am ajutat să își alinieze obiectivele cu cele ale companiei.",
+        "Am susținut evaluări de performanță, am rezolvat problemele semnalate de colegi și am comunicat transparent deciziile companiei, ca să construim o relație de încredere.",
       ],
     },
     "consumer-platform": {
       title: "Web Developer",
-      headline: "Platformă web de consum cu trafic ridicat, pe o piață reglementată din Marea Britanie",
+      headline: "Platformă web B2C cu trafic ridicat, pe o piață reglementată din Marea Britanie",
       points: [
-        "Am întreținut și extins aplicația principală pentru clienți: am migrat componentele de tip clasă la hooks și am integrat streaming live, widgeturi cu date în timp real, bannere dinamice și reCAPTCHA.",
-        "Am construit un instrument intern pentru urmărirea stadiului funcționalităților și a deeplink-urilor, rularea testelor E2E Cypress și activarea funcționalităților prin Jenkins.",
-        "Am contribuit la back office: gestionarea conținutului, competiții personalizate pentru anumiți clienți, plăți și tranzacții.",
-        "Am construit o aplicație single-page pentru campanii de marketing.",
-        "Am îndrumat și sprijinit dezvoltatori prin code ownership, am stabilit prioritățile împreună cu stakeholderii și am susținut interviuri tehnice pentru roluri React.",
+        "Am întreținut și extins aplicația principală pentru clienți: am rescris componentele de tip clasă ca componente funcționale cu hooks și am integrat streaming live, widgeturi cu date în timp real, bannere dinamice și reCAPTCHA.",
+        "Am construit un instrument intern în care dezvoltatorii urmăreau stadiul funcționalităților și deeplink-urile lor, porneau teste E2E cu Cypress și activau sau dezactivau funcționalități prin Jenkins.",
+        "Am contribuit la aplicația de back office, folosită pentru gestionarea conținutului, crearea de competiții personalizate pentru anumiți clienți și administrarea plăților și tranzacțiilor.",
+        "Am dezvoltat o aplicație single-page pentru campaniile de marketing.",
+        "Am îndrumat și sprijinit alți dezvoltatori prin code ownership, am stabilit prioritățile împreună cu stakeholderii și am susținut interviuri tehnice pentru poziții de React developer.",
       ],
     },
     qa: {
-      title: "QA manual și automat · part-time",
+      title: "QA manual și automatizat · part-time",
       headline: "Aplicații mobile și servicii backend",
       points: [
-        "Testare manuală a aplicațiilor Android și iOS pentru utilizabilitate și stabilitate.",
-        "Testare automată a serviciilor backend și a API-urilor în Java.",
+        "Am testat manual aplicațiile Android și iOS, urmărind ușurința în utilizare, funcționalitatea și stabilitatea.",
+        "Am scris teste automatizate în Java pentru serviciile backend și API-uri.",
       ],
     },
     "android-intern": {
       title: "Android Developer · stagiar",
-      headline: "Bazele dezvoltării Android",
-      points: ["Stagiu care a pus bazele aplicației din lucrarea mea de licență."],
+      headline: "Primii pași în dezvoltarea Android",
+      points: ["Stagiul mi-a oferit bazele de care am avut nevoie pentru aplicația din lucrarea de licență."],
     },
     "qa-intern": {
       title: "QA manual · stagiar",
-      headline: "Procese de testare și raportarea defectelor",
-      points: ["Prima experiență practică cu procese de QA pe proiecte software reale."],
+      headline: "Procese de testare și raportare a defectelor",
+      points: ["Primul contact practic cu procesele de QA, pe proiecte software reale."],
     },
   },
   projects: {
-    shiftify: {
-      name: "Shiftify",
-      tagline: "Pontaje pentru freelanceri, fără foi de calcul.",
+    tivren: {
+      name: "Tivren",
+      tagline: "Pontaje pentru freelanceri, fără bătăi de cap.",
       description:
-        "O aplicație offline de pontaj pentru freelanceri: înregistrezi zilele lucrate pentru fiecare client, îți iei zile libere și exporți pontajul lunar în Excel sau PDF. Sărbătorile legale se aplică automat, iar totul rămâne pe dispozitiv: fără cont, fără backend. Construită cu Expo / React Native pentru mobil și Electron pentru Mac și Windows, cu un site de prezentare în React + Vite care distribuie versiuni semnate, cu actualizare automată.",
+        "O aplicație offline de pontaj pentru freelanceri: înregistrezi zilele lucrate la fiecare client, îți notezi zilele libere și exporți pontajul lunar în Excel sau PDF. Sărbătorile legale sunt luate în calcul automat, iar datele rămân pe dispozitiv: fără cont, fără server. Am construit-o cu Expo / React Native pentru mobil și cu Electron pentru Mac și Windows, iar site-ul de prezentare, făcut în React + Vite, distribuie versiuni semnate, care se actualizează automat.",
       links: {
         website: "Vezi site-ul",
         source: "Codul site-ului",
       },
-      images: ["Pontajul zilnic în Shiftify", "Luna dintr-o privire", "Export în Excel sau PDF", "Mod întunecat"],
+      images: ["Pontajul zilnic din Tivren", "Luna dintr-o privire", "Export în Excel sau PDF", "Modul întunecat"],
     },
     "healthcare-portal": {
-      name: "Portal pentru membri – sănătate SUA",
-      tagline: "Portal pentru membri, conform HIPAA și WCAG.",
+      name: "Portal pentru asigurați (SUA)",
+      tagline: "Conform HIPAA și cu accesibilitate WCAG.",
       description:
-        "Arhitectură bazată pe portaluri care păstrează starea iframe-urilor, layouturi cu mai multe headere sticky, un toolkit comun web/nativ și feature flags pe Sentry.",
+        "Arhitectură bazată pe portaluri care păstrează starea iframe-urilor, layouturi cu mai multe headere sticky, un toolkit comun pentru web și mobil și feature flags integrate cu Sentry.",
       links: {},
       images: [],
     },
     "dev-tool": {
-      name: "Dashboard de lansări și funcționalități",
+      name: "Dashboard pentru lansări și funcționalități",
       tagline: "Instrument intern pentru dezvoltatori.",
       description:
-        "Un singur loc în care dezvoltatorii și stakeholderii urmăresc progresul fiecărei funcționalități, accesează deeplink-urile și task-urile asociate, pornesc teste end-to-end și activează sau dezactivează funcționalități prin joburi Jenkins.",
+        "Un singur loc din care dezvoltatorii și stakeholderii urmăresc progresul fiecărei funcționalități, ajung la deeplink-urile și task-urile asociate, pornesc teste end-to-end și activează sau dezactivează funcționalități prin joburi Jenkins.",
       links: {},
       images: [],
     },
     backoffice: {
       name: "Back office operațional",
-      tagline: "Platformă de administrare pentru un produs de consum cu trafic ridicat.",
+      tagline: "Platformă de administrare pentru un produs B2C cu trafic ridicat.",
       description:
-        "Folosit zilnic de operatori pentru a configura și edita conținut, a crea competiții personalizate pentru anumiți clienți și a supraveghea plăți și tranzacții.",
+        "Folosit zilnic de operatori pentru a configura și edita conținutul, a crea competiții personalizate pentru anumiți clienți și a urmări plățile și tranzacțiile.",
       links: {},
       images: [],
     },
@@ -113,7 +116,7 @@ export const content: CvContent = {
       name: "ACCU: Accountability of Utilities",
       tagline: "Lucrare de licență, aplicație Android.",
       description:
-        "Urmărește și gestionează consumul lunar de utilități. Construită pentru lucrarea mea de licență la Universitatea Babeș-Bolyai.",
+        "Aplicație pentru urmărirea și gestionarea consumului lunar de utilități, realizată pentru lucrarea mea de licență la Universitatea Babeș-Bolyai.",
       links: {
         source: "Codul pe GitHub",
       },
@@ -129,10 +132,11 @@ export const content: CvContent = {
     leadership: "Leadership",
   },
   education: {
-    degree: "Diplomă de licență în programare",
+    degree: "Licență în Informatică",
     school: "Facultatea de Matematică și Informatică, Universitatea Babeș-Bolyai",
     note: "Java, Android, Python, Angular, C/C++ și Assembly. Lucrare de licență: ACCU, o aplicație Android pentru urmărirea consumului de utilități.",
   },
+  // Course titles are the official (English) names in every language.
   certifications: {
     "react-native": "React Native – The Practical Guide",
     vue: "Vue – The Complete Guide (incl. Router & Composition API)",

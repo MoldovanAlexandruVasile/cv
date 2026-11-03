@@ -76,8 +76,8 @@ export const content: CvContent = {
     },
   },
   projects: {
-    shiftify: {
-      name: "Shiftify",
+    tivren: {
+      name: "Tivren",
       tagline: "Timesheets for freelancers, without the spreadsheet.",
       description:
         "An offline timesheet app for freelancers: log the days you work per client, take days off, and export a monthly timesheet to Excel or PDF. Bank holidays are applied automatically and everything stays on the device: no account, no backend. Built with Expo / React Native for mobile and Electron for Mac and Windows, with a React + Vite marketing site that serves signed auto-updating releases.",
@@ -85,7 +85,7 @@ export const content: CvContent = {
         website: "Visit the website",
         source: "Website source",
       },
-      images: ["Shiftify daily check-in", "Month at a glance", "Export to Excel or PDF", "Dark mode"],
+      images: ["Tivren daily check-in", "Month at a glance", "Export to Excel or PDF", "Dark mode"],
     },
     "healthcare-portal": {
       name: "US Healthcare Member Portal",
