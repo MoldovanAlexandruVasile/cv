@@ -9,7 +9,7 @@ export const jobs: Job[] = [
   },
   {
     id: "healthcare",
-    company: "Zenitech",
+    company: "Zenitech Development S.R.L.",
     start: "2026-01",
     end: "2026-10",
     tags: [
@@ -32,14 +32,14 @@ export const jobs: Job[] = [
   },
   {
     id: "people-lead",
-    company: "Zenitech",
+    company: "Zenitech Development S.R.L.",
     start: "2025-09",
     end: "2026-10",
     tags: ["People Lead", "Team Management"],
   },
   {
     id: "consumer-platform",
-    company: "Zenitech",
+    company: "Zenitech Development S.R.L.",
     start: "2019-09",
     end: "2025-12",
     tags: [
@@ -57,21 +57,21 @@ export const jobs: Job[] = [
   },
   {
     id: "qa",
-    company: "Zenitech",
+    company: "Zenitech Development S.R.L.",
     start: "2018-09",
     end: "2019-09",
     tags: ["Java", "QA"],
   },
   {
     id: "android-intern",
-    company: "Zenitech",
+    company: "Zenitech Development S.R.L.",
     start: "2018-06",
     end: "2018-09",
     tags: ["Android", "Java"],
   },
   {
     id: "qa-intern",
-    company: "Zenitech",
+    company: "Zenitech Development S.R.L.",
     start: "2017-05",
     end: "2017-07",
     tags: ["QA"],
