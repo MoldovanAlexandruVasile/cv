@@ -3,8 +3,15 @@ import { projects } from "../data/projects.ts";
 
 export type StatId = "years" | "roles" | "projects";
 
-export const STATS: { id: StatId; value: string }[] = [
-  { id: "years", value: "7+" },
+export type Stat = {
+  id: StatId;
+  value: string;
+};
+
+// Every number is derived: years from the career start and today's date, roles
+// and projects from the data lists, so adding an entry updates the header.
+export const buildStats = (years: number): Stat[] => [
+  { id: "years", value: `${years}+` },
   { id: "roles", value: String(jobs.length) },
   { id: "projects", value: String(projects.length) },
 ];

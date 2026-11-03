@@ -20,6 +20,10 @@ language picks the default; the header dropdown switches and remembers it.
 - **Structure** lives in `src/data/`: ids, companies, dates (`YYYY-MM`), tags,
   links and images.
 
+The header numbers update on their own: years of experience count from
+`CAREER_START` in `src/constants/career.ts` (in the visitor's browser, so no
+redeploy is needed), and the roles and projects counts come from `src/data/`.
+
 To add a role or project, add it to `src/data/` and add its text under the same
 id in both `content.ts` files. English is the reference: `tsc` fails if a `t()`
 key or a Romanian UI key is missing.

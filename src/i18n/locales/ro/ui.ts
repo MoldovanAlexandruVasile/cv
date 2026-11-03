@@ -6,7 +6,7 @@ export const ui = {
   meta: {
     title: "Alexandru-Vasile Moldovan · Senior Frontend Developer",
     description:
-      "Senior Frontend Developer. React, TypeScript și peste 7 ani de experiență în dezvoltarea de platforme web reglementate.",
+      "Senior Frontend Developer. React, TypeScript și peste {{years}} de experiență în dezvoltarea de platforme web reglementate.",
   },
   nav: {
     skills: "Competențe",
@@ -58,6 +58,10 @@ export const ui = {
   experience: {
     title: "Experiență",
     present: "prezent",
+    // Used after "peste": "peste 7 ani", "peste 20 de ani".
+    years_one: "{{count}} an",
+    years_few: "{{count}} ani",
+    years_other: "{{count}} de ani",
   },
   projects: {
     title: "Proiecte",

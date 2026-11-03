@@ -7,7 +7,7 @@ export const content: CvContent = {
     role: "Senior Frontend Developer",
     location: "Târgu Mureș, Romania",
     summary:
-      "Frontend engineer with 7+ years building regulated, high-traffic web platforms for UK and US clients, now working as an independent contractor. I write React and TypeScript, shape architecture through ADRs, and have led and grown frontend teams as a People Lead.",
+      "Frontend engineer with {{years}} building regulated, high-traffic web platforms for UK and US clients, now working as an independent contractor. I write React and TypeScript, shape architecture through ADRs, and have led and grown frontend teams as a People Lead.",
     languages: ["Romanian (native)", "English"],
     hiring: {
       employee: {

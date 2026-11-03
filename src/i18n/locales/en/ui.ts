@@ -2,7 +2,7 @@
 export const ui = {
   meta: {
     title: "Alexandru-Vasile Moldovan · Senior Frontend Developer",
-    description: "Senior Frontend Developer. React, TypeScript and 7+ years building regulated web platforms.",
+    description: "Senior Frontend Developer. React, TypeScript and {{years}} building regulated web platforms.",
   },
   nav: {
     skills: "Skills",
@@ -52,6 +52,9 @@ export const ui = {
   experience: {
     title: "Experience",
     present: "Present",
+    // Used inside sentences, e.g. "7+ years"; {{count}} is computed from the career start.
+    years_one: "{{count}}+ year",
+    years_other: "{{count}}+ years",
   },
   projects: {
     title: "Projects",

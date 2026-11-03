@@ -8,7 +8,7 @@ export const content: CvContent = {
     role: "Senior Frontend Developer",
     location: "Târgu Mureș, România",
     summary:
-      "Dezvoltator frontend cu peste 7 ani de experiență în construirea de platforme web reglementate, cu trafic ridicat, pentru clienți din Marea Britanie și SUA. În prezent lucrez ca colaborator independent. Folosesc zilnic React și TypeScript, documentez deciziile de arhitectură prin ADR-uri, iar ca People Lead am îndrumat și sprijinit creșterea echipelor de frontend.",
+      "Dezvoltator frontend cu peste {{years}} de experiență în construirea de platforme web reglementate, cu trafic ridicat, pentru clienți din Marea Britanie și SUA. În prezent lucrez ca colaborator independent. Folosesc zilnic React și TypeScript, documentez deciziile de arhitectură prin ADR-uri, iar ca People Lead am îndrumat și sprijinit creșterea echipelor de frontend.",
     languages: ["Română (limbă maternă)", "Engleză"],
     hiring: {
       employee: {

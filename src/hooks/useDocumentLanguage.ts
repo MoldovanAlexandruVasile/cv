@@ -1,15 +1,17 @@
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import { useExperience } from "./useExperience.ts";
 import { useLanguage } from "./useLanguage.ts";
 
 // Keeps <html lang>, the tab title and the meta description in the current language.
 export const useDocumentLanguage = () => {
   const { t } = useTranslation();
   const { language } = useLanguage();
+  const { yearsText } = useExperience();
 
   useEffect(() => {
     document.documentElement.lang = language;
     document.title = t("meta.title");
-    document.querySelector('meta[name="description"]')?.setAttribute("content", t("meta.description"));
-  }, [language, t]);
+    document.querySelector('meta[name="description"]')?.setAttribute("content", t("meta.description", { years: yearsText }));
+  }, [language, t, yearsText]);
 };
