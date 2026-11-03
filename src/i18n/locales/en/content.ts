@@ -10,14 +10,18 @@ export const content: CvContent = {
       "Frontend engineer with 7+ years building regulated, high-traffic web platforms for UK and US clients, now working as an independent contractor. I write React and TypeScript, shape architecture through ADRs, and have led and grown frontend teams as a People Lead.",
     languages: ["Romanian (native)", "English"],
     hiring: {
-      employee: { label: "Employee", detail: "CIM (Contract Individual de Muncă)" },
+      employee: {
+        label: "Employee",
+        detail: "CIM (Contract Individual de Muncă)",
+      },
       contractor: { label: "Contractor", detail: "B2B / freelance" },
     },
   },
   jobs: {
     "gaming-factory": {
       title: "Senior Frontend Developer",
-      headline: "Frontend development for an online sports betting and casino product",
+      headline:
+        "Frontend development for an online sports betting and casino product",
       points: [
         "Develop player-facing features and integrate third-party services such as live video, in-play statistics and promotional content.",
         "Work on the operator tools behind the product: managing fixtures, games and tailored competitions, along with payments and bets.",
@@ -27,8 +31,9 @@ export const content: CvContent = {
       ],
     },
     healthcare: {
-      title: "Senior Web Developer",
-      headline: "HIPAA-compliant member portal for a major US healthcare client",
+      title: "Senior Frontend Developer",
+      headline:
+        "HIPAA-compliant member portal for a major US healthcare client",
       points: [
         "Guided our sub-team under the tech lead, built core features and wired them to backend endpoints.",
         "Authored key ADRs: a portal-based architecture with Jotai families and key-based rendering to preserve iframe state, and a layout strategy for multiple sticky headers.",
@@ -46,7 +51,7 @@ export const content: CvContent = {
       ],
     },
     "consumer-platform": {
-      title: "Web Developer",
+      title: "Frontend Developer",
       headline: "High-traffic consumer web platform in a regulated UK market",
       points: [
         "Maintained and extended the main customer-facing app: moved class components to hooks, integrated live streaming, real-time data widgets, dynamic banners and reCAPTCHA.",
@@ -67,12 +72,16 @@ export const content: CvContent = {
     "android-intern": {
       title: "Android Developer · intern",
       headline: "Foundations of Android development",
-      points: ["Internship that laid the groundwork for my Bachelor's thesis app."],
+      points: [
+        "Internship that laid the groundwork for my Bachelor's thesis app.",
+      ],
     },
     "qa-intern": {
       title: "Manual QA · intern",
       headline: "Testing processes and defect reporting",
-      points: ["First hands-on experience with QA practices on real software projects."],
+      points: [
+        "First hands-on experience with QA practices on real software projects.",
+      ],
     },
   },
   projects: {
@@ -85,7 +94,12 @@ export const content: CvContent = {
         website: "Visit the website",
         source: "Website source",
       },
-      images: ["Tivren daily check-in", "Month at a glance", "Export to Excel or PDF", "Dark mode"],
+      images: [
+        "Tivren daily check-in",
+        "Month at a glance",
+        "Export to Excel or PDF",
+        "Dark mode",
+      ],
     },
     "healthcare-portal": {
       name: "US Healthcare Member Portal",
@@ -132,7 +146,8 @@ export const content: CvContent = {
   },
   education: {
     degree: "Bachelor's Degree in Programming",
-    school: "Faculty of Mathematics and Computer Science, Babeș-Bolyai University",
+    school:
+      "Faculty of Mathematics and Computer Science, Babeș-Bolyai University",
     note: "Java, Android, Python, Angular, C/C++ and Assembly. Thesis: ACCU, an Android app for tracking utility usage.",
   },
   // Course titles are the official (English) names in every language.

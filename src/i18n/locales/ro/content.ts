@@ -11,14 +11,18 @@ export const content: CvContent = {
       "Dezvoltator frontend cu peste 7 ani de experiență în construirea de platforme web reglementate, cu trafic ridicat, pentru clienți din Marea Britanie și SUA. În prezent lucrez ca colaborator independent. Folosesc zilnic React și TypeScript, documentez deciziile de arhitectură prin ADR-uri, iar ca People Lead am îndrumat și sprijinit creșterea echipelor de frontend.",
     languages: ["Română (limbă maternă)", "Engleză"],
     hiring: {
-      employee: { label: "Angajare", detail: "CIM (Contract Individual de Muncă)" },
+      employee: {
+        label: "Angajare",
+        detail: "CIM (Contract Individual de Muncă)",
+      },
       contractor: { label: "Colaborare", detail: "B2B / freelance" },
     },
   },
   jobs: {
     "gaming-factory": {
       title: "Senior Frontend Developer",
-      headline: "Dezvoltare frontend pentru o platformă online de pariuri sportive și cazinou",
+      headline:
+        "Dezvoltare frontend pentru o platformă online de pariuri sportive și cazinou",
       points: [
         "Dezvolt funcționalități destinate jucătorilor și integrez servicii externe, precum transmisiuni video live, statistici în timp real din timpul meciurilor și conținut promoțional.",
         "Lucrez la instrumentele folosite de operatori pentru gestionarea evenimentelor sportive, a jocurilor și a competițiilor personalizate, precum și a plăților și pariurilor.",
@@ -28,8 +32,9 @@ export const content: CvContent = {
       ],
     },
     healthcare: {
-      title: "Senior Web Developer",
-      headline: "Portal pentru asigurați, conform HIPAA, pentru un client important din sistemul de sănătate din SUA",
+      title: "Senior Frontend Developer",
+      headline:
+        "Portal pentru asigurați, conform HIPAA, pentru un client important din sistemul de sănătate din SUA",
       points: [
         "Am îndrumat subechipa din care făceam parte, sub coordonarea tech lead-ului, am implementat funcționalitățile de bază și le-am conectat la endpoint-urile din backend.",
         "Am scris ADR-uri esențiale: unul pentru o arhitectură bazată pe portaluri, cu Jotai families și randare pe bază de key, care păstrează starea iframe-urilor, și altul pentru un layout cu mai multe headere sticky.",
@@ -40,15 +45,17 @@ export const content: CvContent = {
     },
     "people-lead": {
       title: "People Lead",
-      headline: "Creșterea profesională și starea de bine a echipei de frontend",
+      headline:
+        "Creșterea profesională și starea de bine a echipei de frontend",
       points: [
         "Am sprijinit creșterea profesională a colegilor din frontend și i-am ajutat să își alinieze obiectivele cu cele ale companiei.",
         "Am susținut evaluări de performanță, am rezolvat problemele semnalate de colegi și am comunicat transparent deciziile companiei, ca să construim o relație de încredere.",
       ],
     },
     "consumer-platform": {
-      title: "Web Developer",
-      headline: "Platformă web B2C cu trafic ridicat, pe o piață reglementată din Marea Britanie",
+      title: "Frontend Developer",
+      headline:
+        "Platformă web B2C cu trafic ridicat, pe o piață reglementată din Marea Britanie",
       points: [
         "Am întreținut și extins aplicația principală pentru clienți: am rescris componentele de tip clasă ca componente funcționale cu hooks și am integrat streaming live, widgeturi cu date în timp real, bannere dinamice și reCAPTCHA.",
         "Am construit un instrument intern în care dezvoltatorii urmăreau stadiul funcționalităților și deeplink-urile lor, porneau teste E2E cu Cypress și activau sau dezactivau funcționalități prin Jenkins.",
@@ -68,12 +75,16 @@ export const content: CvContent = {
     "android-intern": {
       title: "Android Developer · stagiar",
       headline: "Primii pași în dezvoltarea Android",
-      points: ["Stagiul mi-a oferit bazele de care am avut nevoie pentru aplicația din lucrarea de licență."],
+      points: [
+        "Stagiul mi-a oferit bazele de care am avut nevoie pentru aplicația din lucrarea de licență.",
+      ],
     },
     "qa-intern": {
       title: "QA manual · stagiar",
       headline: "Procese de testare și raportare a defectelor",
-      points: ["Primul contact practic cu procesele de QA, pe proiecte software reale."],
+      points: [
+        "Primul contact practic cu procesele de QA, pe proiecte software reale.",
+      ],
     },
   },
   projects: {
@@ -86,7 +97,12 @@ export const content: CvContent = {
         website: "Vezi site-ul",
         source: "Codul site-ului",
       },
-      images: ["Pontajul zilnic din Tivren", "Luna dintr-o privire", "Export în Excel sau PDF", "Modul întunecat"],
+      images: [
+        "Pontajul zilnic din Tivren",
+        "Luna dintr-o privire",
+        "Export în Excel sau PDF",
+        "Modul întunecat",
+      ],
     },
     "healthcare-portal": {
       name: "Portal pentru asigurați (SUA)",
@@ -106,7 +122,8 @@ export const content: CvContent = {
     },
     backoffice: {
       name: "Back office operațional",
-      tagline: "Platformă de administrare pentru un produs B2C cu trafic ridicat.",
+      tagline:
+        "Platformă de administrare pentru un produs B2C cu trafic ridicat.",
       description:
         "Folosit zilnic de operatori pentru a configura și edita conținutul, a crea competiții personalizate pentru anumiți clienți și a urmări plățile și tranzacțiile.",
       links: {},
@@ -133,7 +150,8 @@ export const content: CvContent = {
   },
   education: {
     degree: "Licență în Informatică",
-    school: "Facultatea de Matematică și Informatică, Universitatea Babeș-Bolyai",
+    school:
+      "Facultatea de Matematică și Informatică, Universitatea Babeș-Bolyai",
     note: "Java, Android, Python, Angular, C/C++ și Assembly. Lucrare de licență: ACCU, o aplicație Android pentru urmărirea consumului de utilități.",
   },
   // Course titles are the official (English) names in every language.
