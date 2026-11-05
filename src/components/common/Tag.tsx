@@ -1,5 +1,5 @@
 import type { MouseEvent } from "react";
-import { classNames } from "../../utils/classNames.ts";
+import { cx } from "@moldovanalexandruvasile/unity-marketing";
 
 type TagProps = {
   label: string;
@@ -17,7 +17,7 @@ export const Tag = ({ label, active, onSelect }: TagProps) => {
 
   return (
     <button
-      className={classNames(
+      className={cx(
         BASE,
         active ? "border-accent bg-accent text-white" : "border-line bg-page hover:border-accent",
       )}

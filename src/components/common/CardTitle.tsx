@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import { classNames } from "../../utils/classNames.ts";
+import { cx } from "@moldovanalexandruvasile/unity-marketing";
 
 type CardTitleProps = {
   large?: boolean;
@@ -7,5 +7,5 @@ type CardTitleProps = {
 };
 
 export const CardTitle = ({ large = false, children }: CardTitleProps) => (
-  <h3 className={classNames("mt-1.5 font-bold", large ? "text-[30px]" : "text-xl")}>{children}</h3>
+  <h3 className={cx("mt-1.5 font-bold", large ? "text-[30px]" : "text-xl")}>{children}</h3>
 );

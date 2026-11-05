@@ -1,4 +1,4 @@
-import { classNames } from "../../utils/classNames.ts";
+import { cx } from "@moldovanalexandruvasile/unity-marketing";
 
 type ChevronProps = {
   open: boolean;
@@ -9,7 +9,7 @@ type ChevronProps = {
 
 export const Chevron = ({ open, direction = "right", className }: ChevronProps) => (
   <span
-    className={classNames(
+    className={cx(
       "leading-none text-muted transition-transform duration-200",
       direction === "right" ? (open ? "rotate-90" : "") : open ? "-rotate-90" : "rotate-90",
       className,

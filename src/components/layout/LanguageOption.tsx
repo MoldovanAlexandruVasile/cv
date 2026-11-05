@@ -1,5 +1,5 @@
 import type { LanguageCode } from "../../constants/languages.ts";
-import { classNames } from "../../utils/classNames.ts";
+import { cx } from "@moldovanalexandruvasile/unity-marketing";
 
 type LanguageOptionProps = {
   code: LanguageCode;
@@ -13,7 +13,7 @@ export const LanguageOption = ({ code, label, selected, onPick }: LanguageOption
     role="menuitemradio"
     aria-checked={selected}
     lang={code}
-    className={classNames(
+    className={cx(
       "flex items-center justify-between gap-6 rounded-lg px-3 py-2 text-left text-sm transition-colors",
       selected ? "bg-accent-soft font-semibold text-accent" : "text-ink hover:bg-accent-soft hover:text-accent",
     )}

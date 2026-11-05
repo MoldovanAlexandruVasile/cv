@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import { EYEBROW } from "../../styles/ui.ts";
-import { classNames } from "../../utils/classNames.ts";
+import { cx } from "@moldovanalexandruvasile/unity-marketing";
 
 type KindLabelProps = {
   variant?: string;
@@ -13,5 +13,5 @@ const COLORS: Record<string, string> = {
 };
 
 export const KindLabel = ({ variant, children }: KindLabelProps) => (
-  <span className={classNames(EYEBROW, (variant && COLORS[variant]) || "text-accent")}>{children}</span>
+  <span className={cx(EYEBROW, (variant && COLORS[variant]) || "text-accent")}>{children}</span>
 );

@@ -1,5 +1,5 @@
 import type { ProjectImage } from "../../types/cv.ts";
-import { classNames } from "../../utils/classNames.ts";
+import { cx } from "@moldovanalexandruvasile/unity-marketing";
 
 type GallerySlideProps = {
   image: ProjectImage;
@@ -11,7 +11,7 @@ export const GallerySlide = ({ image, visible }: GallerySlideProps) => (
     src={image.src}
     alt={image.alt}
     loading="lazy"
-    className={classNames(
+    className={cx(
       "absolute inset-0 size-full object-cover transition-opacity duration-350",
       visible ? "opacity-100" : "opacity-0",
     )}

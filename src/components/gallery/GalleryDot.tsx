@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { classNames } from "../../utils/classNames.ts";
+import { cx } from "@moldovanalexandruvasile/unity-marketing";
 
 type GalleryDotProps = {
   label: string;
@@ -12,7 +12,7 @@ export const GalleryDot = ({ label, active, onClick }: GalleryDotProps) => {
 
   return (
     <button
-      className={classNames(
+      className={cx(
         "h-2 rounded-full transition-[width,background-color] duration-200",
         active ? "w-6 bg-accent" : "w-2 bg-line",
       )}

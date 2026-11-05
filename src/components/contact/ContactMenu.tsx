@@ -1,7 +1,4 @@
-import { useRef } from "react";
-import { useDismiss } from "../../hooks/useDismiss.ts";
-import { useToggle } from "../../hooks/useToggle.ts";
-import { classNames } from "../../utils/classNames.ts";
+import { cx, useDropdown } from "@moldovanalexandruvasile/unity-marketing";
 import { ContactMenuList } from "./ContactMenuList.tsx";
 import { ContactTrigger } from "./ContactTrigger.tsx";
 
@@ -11,12 +8,10 @@ type ContactMenuProps = {
 };
 
 export const ContactMenu = ({ email, className }: ContactMenuProps) => {
-  const { on: open, toggle, close } = useToggle();
-  const ref = useRef<HTMLDivElement>(null);
-  useDismiss(ref, open, close);
+  const { root: ref, isOpen: open, toggle, close } = useDropdown();
 
   return (
-    <div className={classNames("relative", className)} ref={ref}>
+    <div className={cx("relative", className)} ref={ref}>
       <ContactTrigger open={open} onToggle={toggle} />
       {open && <ContactMenuList email={email} onPick={close} />}
     </div>

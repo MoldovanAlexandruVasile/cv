@@ -3,7 +3,7 @@ import { useLanguage } from "../../hooks/useLanguage.ts";
 import { SURFACE } from "../../styles/ui.ts";
 import type { Project } from "../../types/cv.ts";
 import type { SkillFilterProps } from "../../types/skillFilter.ts";
-import { classNames } from "../../utils/classNames.ts";
+import { cx } from "@moldovanalexandruvasile/unity-marketing";
 import { withAltText } from "../../utils/projects.ts";
 import { skillMatchClass } from "../../utils/skillMatch.ts";
 import { Tags } from "../common/Tags.tsx";
@@ -21,7 +21,7 @@ export const FeaturedProject = ({ project, selected, onSelect }: FeaturedProject
 
   return (
     <article
-      className={classNames(
+      className={cx(
         SURFACE,
         "mb-4 grid grid-cols-[1.25fr_1fr] overflow-hidden max-md:grid-cols-1",
         skillMatchClass(project.tags, selected),

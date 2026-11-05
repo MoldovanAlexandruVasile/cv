@@ -2,7 +2,7 @@ import { useContent } from "../../hooks/useContent.ts";
 import { SURFACE } from "../../styles/ui.ts";
 import type { Job } from "../../types/cv.ts";
 import type { SkillFilterProps } from "../../types/skillFilter.ts";
-import { classNames } from "../../utils/classNames.ts";
+import { cx } from "@moldovanalexandruvasile/unity-marketing";
 import { skillMatchClass } from "../../utils/skillMatch.ts";
 import { JobDetails } from "./JobDetails.tsx";
 import { JobHeader } from "./JobHeader.tsx";
@@ -19,7 +19,7 @@ export const JobItem = ({ job, open, onToggle, selected, onSelect }: JobItemProp
   const text = jobs[job.id];
 
   return (
-    <li className={classNames(SURFACE, "relative", skillMatchClass(job.tags, selected))}>
+    <li className={cx(SURFACE, "relative", skillMatchClass(job.tags, selected))}>
       <TimelineDot filled={open} />
       <JobHeader job={job} text={text} open={open} onToggle={onToggle} />
       <JobDetails points={text.points} tags={job.tags} open={open} selected={selected} onSelect={onSelect} />

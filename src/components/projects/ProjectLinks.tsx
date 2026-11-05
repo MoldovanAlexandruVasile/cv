@@ -1,6 +1,6 @@
 import { ACTIONS } from "../../styles/ui.ts";
 import type { ProjectLink } from "../../types/cv.ts";
-import { classNames } from "../../utils/classNames.ts";
+import { cx } from "@moldovanalexandruvasile/unity-marketing";
 import { ExternalButton } from "../common/ExternalButton.tsx";
 
 type ProjectLinksProps = {
@@ -14,7 +14,7 @@ export const ProjectLinks = ({ links, labels, className }: ProjectLinksProps) =>
   if (!links) return null;
 
   return (
-    <div className={classNames(ACTIONS, className)}>
+    <div className={cx(ACTIONS, className)}>
       {links.map((link, i) => (
         <ExternalButton key={link.href} href={link.href} primary={i === 0}>
           {labels[link.id]} ↗
