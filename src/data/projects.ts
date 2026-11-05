@@ -18,6 +18,22 @@ export const projects: Project[] = [
     ],
   },
   {
+    id: "casita",
+    kind: "personal",
+    tags: ["React Native", "Expo", "TypeScript", "SQLite", "TanStack Query", "Jotai", "i18next", "React", "Vite", "Tailwind CSS"],
+    links: [
+      { id: "website", href: "https://moldovanalexandruvasile.github.io/casita-website/" },
+      { id: "source", href: "https://github.com/MoldovanAlexandruVasile/casita-website" },
+    ],
+    // Alt texts are in content.projects.casita.images, in the same order.
+    images: [
+      "media/casita/01-plan.jpg",
+      "media/casita/02-whats-left.jpg",
+      "media/casita/04-savings.jpg",
+      "media/casita/06-dark-mode.jpg",
+    ],
+  },
+  {
     id: "healthcare-portal",
     kind: "professional",
     tags: ["React", "TypeScript", "Jotai", "TanStack Query", "GraphQL", "Tailwind CSS", "WCAG"],

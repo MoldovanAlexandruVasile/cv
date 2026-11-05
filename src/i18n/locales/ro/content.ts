@@ -107,6 +107,22 @@ export const content: CvContent = {
         "Modul întunecat",
       ],
     },
+    casita: {
+      name: "Casita",
+      tagline: "Bugetul casei, în sfârșit liniștit.",
+      description:
+        "O aplicație de buget pentru casă, pe iPhone și Android, care va fi lansată în curând: îți planifici luna în câteva minute, dai fiecărei categorii un plafon, economisești pentru obiective în seifuri separate și îți compari cheltuielile zilnice cu un ritm sigur. Poți începe ca invitat, cu totul salvat pe telefon, sau te poți conecta ca datele să fie sincronizate, iar aplicația se poate bloca cu Face ID sau amprenta. Am construit-o cu Expo / React Native, Expo Router, SQLite, TanStack Query și Jotai, iar site-ul de prezentare, făcut în React + Vite + Tailwind, este în română și engleză.",
+      links: {
+        website: "Vezi site-ul",
+        source: "Codul site-ului",
+      },
+      images: [
+        "Planificarea lunii în Casita",
+        "Cât mai ai de cheltuit",
+        "Seifuri de economii",
+        "Modul întunecat",
+      ],
+    },
     "healthcare-portal": {
       name: "Portal pentru asigurați (SUA)",
       tagline: "Conform HIPAA și cu accesibilitate WCAG.",

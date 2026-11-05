@@ -104,6 +104,22 @@ export const content: CvContent = {
         "Dark mode",
       ],
     },
+    casita: {
+      name: "Casita",
+      tagline: "Your household budget, finally calm.",
+      description:
+        "A household budgeting app for iPhone and Android, coming soon: plan the month in a few minutes, give every category a cap, save towards goals in separate vaults and compare your daily spending with a safe pace. Start as a guest with everything on the phone, or sign in to keep it in sync, and lock the app with Face ID or a fingerprint. Built with Expo / React Native, Expo Router, SQLite, TanStack Query and Jotai, with a React + Vite + Tailwind presentation site in English and Romanian.",
+      links: {
+        website: "Visit the website",
+        source: "Website source",
+      },
+      images: [
+        "Planning the month in Casita",
+        "What's left to spend",
+        "Savings vaults",
+        "Dark mode",
+      ],
+    },
     "healthcare-portal": {
       name: "US Healthcare Member Portal",
       tagline: "HIPAA-regulated, WCAG-compliant member portal.",
