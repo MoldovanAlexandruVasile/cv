@@ -30,6 +30,22 @@ key or a Romanian UI key is missing.
 
 The Tivren screenshots in `public/media` (Romanian ones in `public/media/ro`) come from the `tivren-website` repo.
 
+## SEO
+
+`build/seo.ts` runs at build time with the published address (`SITE_URL`, set
+by the deploy workflow from GitHub Pages; `…github.io/cv/` locally). It fills in
+the canonical URL and link-preview tags in `index.html`, adds schema.org
+`Person` data built from `src/data`, and writes `robots.txt` and `sitemap.xml`.
+
+- English is the plain URL, Romanian is `?lang=ro`; both are in the sitemap and
+  linked to each other with `hreflang`. The app keeps `<html lang>`, the
+  canonical URL, descriptions and the address bar in the current language.
+- `public/og-image.png` (1200×630) is the image shown when the link is shared.
+- Crawlers only read `robots.txt` at the domain root, so it takes effect once
+  the site is served from `…github.io/` (repo named
+  `MoldovanAlexandruVasile.github.io`) or a custom domain. The sitemap works
+  anywhere once submitted in Google Search Console.
+
 ## Code layout
 
 | Folder                | What lives there                                            |

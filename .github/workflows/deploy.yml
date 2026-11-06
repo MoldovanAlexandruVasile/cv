@@ -30,7 +30,13 @@ jobs:
           # NODE_AUTH_TOKEN secret (PAT, read:packages) if set, else this run's own token
           # (needs this repo granted read access in the package's settings).
           NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN || secrets.GITHUB_TOKEN }}
+      # The published address (…github.io/<repo>/, or a custom domain): used for
+      # the canonical URL, social previews, robots.txt and sitemap.xml.
+      - id: pages
+        uses: actions/configure-pages@v5
       - run: npm run build
+        env:
+          SITE_URL: ${{ steps.pages.outputs.base_url }}
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist

@@ -6,6 +6,37 @@
     <title>Alexandru-Vasile Moldovan · Senior Frontend Developer</title>
     <!-- Fallback; the app rewrites it with the current years of experience and language. -->
     <meta name="description" content="Senior Frontend Developer. React, TypeScript and years of experience building regulated web platforms." />
+    <meta name="author" content="Alexandru-Vasile Moldovan" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- __SITE_URL__ is filled in at build time (build/seo.ts). -->
+    <link rel="canonical" href="__SITE_URL__" />
+    <link rel="alternate" hreflang="en" href="__SITE_URL__" />
+    <link rel="alternate" hreflang="ro" href="__SITE_URL__?lang=ro" />
+    <link rel="alternate" hreflang="x-default" href="__SITE_URL__" />
+    <link rel="sitemap" type="application/xml" href="sitemap.xml" />
+
+    <!-- How the link looks when shared (LinkedIn, Slack, WhatsApp, X…). -->
+    <meta property="og:type" content="profile" />
+    <meta property="og:site_name" content="Alexandru-Vasile Moldovan" />
+    <meta property="og:title" content="Alexandru-Vasile Moldovan · Senior Frontend Developer" />
+    <meta property="og:description" content="Senior Frontend Developer. React, TypeScript and years of experience building regulated web platforms." />
+    <meta property="og:url" content="__SITE_URL__" />
+    <meta property="og:image" content="__SITE_URL__og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Alexandru-Vasile Moldovan, Senior Frontend Developer" />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:locale:alternate" content="ro_RO" />
+    <meta property="profile:first_name" content="Alexandru-Vasile" />
+    <meta property="profile:last_name" content="Moldovan" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Alexandru-Vasile Moldovan · Senior Frontend Developer" />
+    <meta name="twitter:description" content="Senior Frontend Developer. React, TypeScript and years of experience building regulated web platforms." />
+    <meta name="twitter:image" content="__SITE_URL__og-image.png" />
+
+    <meta name="theme-color" content="#f7f7f5" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0e0f13" media="(prefers-color-scheme: dark)" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,6 +45,15 @@
   </head>
   <body>
     <div id="root"></div>
+    <!-- For crawlers and visitors without JavaScript. -->
+    <noscript>
+      <h1>Alexandru-Vasile Moldovan</h1>
+      <p>
+        Senior Frontend Developer based in Târgu Mureș, Romania. React and TypeScript, building regulated,
+        high-traffic web platforms for UK and US clients. Personal projects: Tivren and Casita.
+      </p>
+      <p><a href="https://github.com/MoldovanAlexandruVasile">GitHub</a></p>
+    </noscript>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
