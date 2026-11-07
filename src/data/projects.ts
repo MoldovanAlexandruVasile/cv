@@ -6,7 +6,7 @@ export const projects: Project[] = [
     kind: "personal",
     tags: ["React Native", "Expo", "Electron", "TypeScript", "React", "Vite", "SQLite", "Jotai", "i18next"],
     links: [
-      { id: "website", href: "https://moldovanalexandruvasile.github.io/tivren-website/" },
+      { id: "website", href: "https://tivren.netlify.app/" },
       { id: "source", href: "https://github.com/MoldovanAlexandruVasile/tivren-website" },
     ],
     // Alt texts are in content.projects.tivren.images, in the same order.
@@ -22,7 +22,7 @@ export const projects: Project[] = [
     kind: "personal",
     tags: ["React Native", "Expo", "TypeScript", "SQLite", "TanStack Query", "Jotai", "i18next", "React", "Vite", "Tailwind CSS"],
     links: [
-      { id: "website", href: "https://moldovanalexandruvasile.github.io/casita-website/" },
+      { id: "website", href: "https://casita.netlify.app/" },
       { id: "source", href: "https://github.com/MoldovanAlexandruVasile/casita-website" },
     ],
     // Alt texts are in content.projects.casita.images, in the same order.

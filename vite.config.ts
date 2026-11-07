@@ -5,7 +5,7 @@ import { resolveSiteUrl, seo } from './build/seo.ts'
 
 const siteUrl = resolveSiteUrl()
 
-// Relative base so the build works on GitHub Pages at the root or under /<repo>/.
+// Relative base so the build works at the domain root or under any sub-path.
 export default defineConfig({
   base: './',
   plugins: [react(), tailwindcss(), seo(siteUrl)],

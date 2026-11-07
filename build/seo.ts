@@ -3,10 +3,9 @@ import { jobs } from "../src/data/jobs.ts";
 import { profile } from "../src/data/profile.ts";
 import { skillGroups } from "../src/data/skills.ts";
 
-// Where the site is published, with a trailing slash. The deploy workflow sets
-// SITE_URL from GitHub Pages, so it follows a repo rename or a custom domain;
-// the fallback is for local builds.
-const FALLBACK_SITE_URL = "https://moldovanalexandruvasile.github.io/cv/";
+// Where the site is published, with a trailing slash. Set SITE_URL to build
+// for another address (for example a custom domain).
+const FALLBACK_SITE_URL = "https://moldovanalexandru.netlify.app/";
 
 export const resolveSiteUrl = () => {
   const url = process.env.SITE_URL || FALLBACK_SITE_URL;

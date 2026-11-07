@@ -1,6 +1,6 @@
 # Alexandru-Vasile Moldovan · CV
 
-Interactive CV site. React + TypeScript + Vite, deployed to GitHub Pages.
+Interactive CV site. React + TypeScript + Vite, hosted on Netlify.
 
 ## Run
 
@@ -32,8 +32,8 @@ The Tivren screenshots in `public/media` (Romanian ones in `public/media/ro`) co
 
 ## SEO
 
-`build/seo.ts` runs at build time with the published address (`SITE_URL`, set
-by the deploy workflow from GitHub Pages; `…github.io/cv/` locally). It fills in
+`build/seo.ts` runs at build time with the published address (`SITE_URL` if set,
+otherwise `https://moldovanalexandru.netlify.app/`). It fills in
 the canonical URL and link-preview tags in `index.html`, adds schema.org
 `Person` data built from `src/data`, and writes `robots.txt` and `sitemap.xml`.
 
@@ -41,10 +41,8 @@ the canonical URL and link-preview tags in `index.html`, adds schema.org
   linked to each other with `hreflang`. The app keeps `<html lang>`, the
   canonical URL, descriptions and the address bar in the current language.
 - `public/og-image.png` (1200×630) is the image shown when the link is shared.
-- Crawlers only read `robots.txt` at the domain root, so it takes effect once
-  the site is served from `…github.io/` (repo named
-  `MoldovanAlexandruVasile.github.io`) or a custom domain. The sitemap works
-  anywhere once submitted in Google Search Console.
+- The site is at its domain's root, so crawlers read `robots.txt` and find the
+  sitemap from it. Submitting the sitemap in Google Search Console speeds that up.
 
 ## Code layout
 
@@ -60,6 +58,8 @@ the canonical URL and link-preview tags in `index.html`, adds schema.org
 
 ## Deploy
 
-Pushing to `main` builds and publishes the site
-(`.github/workflows/deploy.yml`). One-time setup on GitHub: Settings → Pages →
-Source: **GitHub Actions**.
+Hosted on Netlify at https://moldovanalexandru.netlify.app. Pushing to `main` builds and publishes the
+site (settings in `netlify.toml`). One-time setup in Netlify: import this repo,
+and under Site configuration → Environment variables add `NODE_AUTH_TOKEN` (a
+GitHub token with `read:packages`, marked secret, Builds scope) so npm can
+install `@moldovanalexandruvasile/unity-marketing` from GitHub Packages.
