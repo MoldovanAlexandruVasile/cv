@@ -22,7 +22,7 @@ export const projects: Project[] = [
     kind: "personal",
     tags: ["React Native", "Expo", "TypeScript", "SQLite", "TanStack Query", "Jotai", "i18next", "React", "Vite", "Tailwind CSS"],
     links: [
-      { id: "website", href: "https://casita.netlify.app/" },
+      { id: "website", href: "https://casita-budget.netlify.app/" },
       { id: "source", href: "https://github.com/MoldovanAlexandruVasile/casita-website" },
     ],
     // Alt texts are in content.projects.casita.images, in the same order.

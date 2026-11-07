@@ -35,6 +35,15 @@
     <meta name="twitter:description" content="Senior Frontend Developer. React, TypeScript and years of experience building regulated web platforms." />
     <meta name="twitter:image" content="__SITE_URL__og-image.png" />
 
+    <!-- The saved or system theme before the page paints, so the pre-rendered
+         content doesn't flash light for dark-mode visitors (src/utils/theme.ts). -->
+    <script>
+      try {
+        var saved = localStorage.getItem("theme");
+        document.documentElement.dataset.theme =
+          saved === "light" || saved === "dark" ? saved : matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      } catch (e) {}
+    </script>
     <meta name="theme-color" content="#f7f7f5" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#0e0f13" media="(prefers-color-scheme: dark)" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
@@ -46,15 +55,6 @@
   </head>
   <body>
     <div id="root"></div>
-    <!-- For crawlers and visitors without JavaScript. -->
-    <noscript>
-      <h1>Alexandru-Vasile Moldovan</h1>
-      <p>
-        Senior Frontend Developer based in Târgu Mureș, Romania. React and TypeScript, building regulated,
-        high-traffic web platforms for UK and US clients. Personal projects: Tivren and Casita.
-      </p>
-      <p><a href="https://github.com/MoldovanAlexandruVasile">GitHub</a></p>
-    </noscript>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

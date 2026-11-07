@@ -3,6 +3,8 @@ import type { Theme } from "../types/theme.ts";
 const STORAGE_KEY = "theme";
 
 export const readInitialTheme = (): Theme => {
+  // Pre-rendering at build time (no browser): light, the page's default.
+  if (typeof window === "undefined") return "light";
   try {
     const saved = localStorage.getItem(STORAGE_KEY);
     if (saved === "light" || saved === "dark") return saved;

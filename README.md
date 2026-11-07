@@ -37,6 +37,10 @@ otherwise `https://moldovanalexandru.netlify.app/`). It fills in
 the canonical URL and link-preview tags in `index.html`, adds schema.org
 `Person` data built from `src/data`, and writes `robots.txt` and `sitemap.xml`.
 
+- **Pre-rendered HTML:** `npm run build` ends with `scripts/prerender.mjs`, which
+  renders the page in English (`src/entry-server.tsx`) into `dist/index.html`, so
+  crawlers and link previews see the whole CV without running JavaScript. In the
+  browser, React renders it again in the visitor's language.
 - English is the plain URL, Romanian is `?lang=ro`; both are in the sitemap and
   linked to each other with `hreflang`. The app keeps `<html lang>`, the
   canonical URL, descriptions and the address bar in the current language.

@@ -34,6 +34,15 @@ const personJsonLd = (siteUrl: string) => ({
   sameAs: [profile.github],
 });
 
+// schema.org WebSite, so search results show the site's name.
+const websiteJsonLd = (siteUrl: string) => ({
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: profile.name,
+  url: siteUrl,
+  inLanguage: ["en", "ro"],
+});
+
 const robotsTxt = (siteUrl: string) => `User-agent: *
 Allow: /
 
@@ -70,6 +79,12 @@ export const seo = (siteUrl: string): Plugin => ({
           tag: "script",
           attrs: { type: "application/ld+json" },
           children: JSON.stringify(personJsonLd(siteUrl)),
+          injectTo: "head",
+        },
+        {
+          tag: "script",
+          attrs: { type: "application/ld+json" },
+          children: JSON.stringify(websiteJsonLd(siteUrl)),
           injectTo: "head",
         },
       ],
