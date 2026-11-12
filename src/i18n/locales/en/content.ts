@@ -89,7 +89,7 @@ export const content: CvContent = {
   },
   projects: {
     tivren: {
-      name: "Tivren",
+      name: "Tivren Timesheet",
       tagline: "Timesheets for freelancers, without the spreadsheet.",
       description:
         "An offline timesheet app for freelancers: log the days you work per client, take days off, and export a monthly timesheet to Excel or PDF. Bank holidays are applied automatically and everything stays on the device: no account, no backend. Built with Expo / React Native for mobile and Electron for Mac and Windows, with a React + Vite marketing site that serves signed auto-updating releases.",
@@ -98,14 +98,14 @@ export const content: CvContent = {
         source: "Website source",
       },
       images: [
-        "Tivren daily check-in",
+        "Tivren Timesheet daily check-in",
         "Month at a glance",
         "Export to Excel or PDF",
         "Dark mode",
       ],
     },
     casita: {
-      name: "Casita",
+      name: "Tivren Budget",
       tagline: "Your household budget, finally calm.",
       description:
         "A household budgeting app for iPhone and Android, coming soon: plan the month in a few minutes, give every category a cap, save towards goals in separate vaults and compare your daily spending with a safe pace. Start as a guest with everything on the phone, or sign in to keep it in sync, and lock the app with Face ID or a fingerprint. Built with Expo / React Native, Expo Router, SQLite, TanStack Query and Jotai, with a React + Vite + Tailwind presentation site in English and Romanian.",
@@ -114,7 +114,7 @@ export const content: CvContent = {
         source: "Website source",
       },
       images: [
-        "Planning the month in Casita",
+        "Planning the month in Tivren Budget",
         "What's left to spend",
         "Savings vaults",
         "Dark mode",

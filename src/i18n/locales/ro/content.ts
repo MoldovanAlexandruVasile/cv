@@ -92,7 +92,7 @@ export const content: CvContent = {
   },
   projects: {
     tivren: {
-      name: "Tivren",
+      name: "Tivren Timesheet",
       tagline: "Pontaje pentru freelanceri, fără bătăi de cap.",
       description:
         "O aplicație offline de pontaj pentru freelanceri: înregistrezi zilele lucrate la fiecare client, îți notezi zilele libere și exporți pontajul lunar în Excel sau PDF. Sărbătorile legale sunt luate în calcul automat, iar datele rămân pe dispozitiv: fără cont, fără server. Am construit-o cu Expo / React Native pentru mobil și cu Electron pentru Mac și Windows, iar site-ul de prezentare, făcut în React + Vite, distribuie versiuni semnate, care se actualizează automat.",
@@ -101,14 +101,14 @@ export const content: CvContent = {
         source: "Codul site-ului",
       },
       images: [
-        "Pontajul zilnic din Tivren",
+        "Pontajul zilnic din Tivren Timesheet",
         "Luna dintr-o privire",
         "Export în Excel sau PDF",
         "Modul întunecat",
       ],
     },
     casita: {
-      name: "Casita",
+      name: "Tivren Budget",
       tagline: "Bugetul casei, în sfârșit liniștit.",
       description:
         "O aplicație de buget pentru casă, pe iPhone și Android, care va fi lansată în curând: îți planifici luna în câteva minute, dai fiecărei categorii un plafon, economisești pentru obiective în seifuri separate și îți compari cheltuielile zilnice cu un ritm sigur. Poți începe ca invitat, cu totul salvat pe telefon, sau te poți conecta ca datele să fie sincronizate, iar aplicația se poate bloca cu Face ID sau amprenta. Am construit-o cu Expo / React Native, Expo Router, SQLite, TanStack Query și Jotai, iar site-ul de prezentare, făcut în React + Vite + Tailwind, este în română și engleză.",
@@ -117,7 +117,7 @@ export const content: CvContent = {
         source: "Codul site-ului",
       },
       images: [
-        "Planificarea lunii în Casita",
+        "Planificarea lunii în Tivren Budget",
         "Cât mai ai de cheltuit",
         "Seifuri de economii",
         "Modul întunecat",

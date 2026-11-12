@@ -28,7 +28,7 @@ To add a role or project, add it to `src/data/` and add its text under the same
 id in both `content.ts` files. English is the reference: `tsc` fails if a `t()`
 key or a Romanian UI key is missing.
 
-The Tivren screenshots in `public/media` (Romanian ones in `public/media/ro`) come from the `tivren-website` repo.
+The Tivren Timesheet screenshots in `public/media` (Romanian ones in `public/media/ro`) come from the `tivren-timesheet-website` repo.
 
 ## SEO
 

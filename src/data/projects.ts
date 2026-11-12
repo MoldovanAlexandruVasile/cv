@@ -4,10 +4,23 @@ export const projects: Project[] = [
   {
     id: "tivren",
     kind: "personal",
-    tags: ["React Native", "Expo", "Electron", "TypeScript", "React", "Vite", "SQLite", "Jotai", "i18next"],
+    tags: [
+      "React Native",
+      "Expo",
+      "Electron",
+      "TypeScript",
+      "React",
+      "Vite",
+      "SQLite",
+      "Jotai",
+      "i18next",
+    ],
     links: [
-      { id: "website", href: "https://tivren.netlify.app/" },
-      { id: "source", href: "https://github.com/MoldovanAlexandruVasile/tivren-website" },
+      { id: "website", href: "https://tivren-timesheet.netlify.app/" },
+      {
+        id: "source",
+        href: "https://github.com/MoldovanAlexandruVasile/tivren-timesheet-website",
+      },
     ],
     // Alt texts are in content.projects.tivren.images, in the same order.
     images: [
@@ -20,10 +33,24 @@ export const projects: Project[] = [
   {
     id: "casita",
     kind: "personal",
-    tags: ["React Native", "Expo", "TypeScript", "SQLite", "TanStack Query", "Jotai", "i18next", "React", "Vite", "Tailwind CSS"],
+    tags: [
+      "React Native",
+      "Expo",
+      "TypeScript",
+      "SQLite",
+      "TanStack Query",
+      "Jotai",
+      "i18next",
+      "React",
+      "Vite",
+      "Tailwind CSS",
+    ],
     links: [
-      { id: "website", href: "https://casita-budget.netlify.app/" },
-      { id: "source", href: "https://github.com/MoldovanAlexandruVasile/casita-website" },
+      { id: "website", href: "https://tivren-budget.netlify.app/" },
+      {
+        id: "source",
+        href: "https://github.com/MoldovanAlexandruVasile/tivren-budget-website",
+      },
     ],
     // Alt texts are in content.projects.casita.images, in the same order.
     images: [
@@ -36,7 +63,15 @@ export const projects: Project[] = [
   {
     id: "healthcare-portal",
     kind: "professional",
-    tags: ["React", "TypeScript", "Jotai", "TanStack Query", "GraphQL", "Tailwind CSS", "WCAG"],
+    tags: [
+      "React",
+      "TypeScript",
+      "Jotai",
+      "TanStack Query",
+      "GraphQL",
+      "Tailwind CSS",
+      "WCAG",
+    ],
   },
   {
     id: "dev-tool",
@@ -52,6 +87,11 @@ export const projects: Project[] = [
     id: "accu",
     kind: "academic",
     tags: ["Android", "Java"],
-    links: [{ id: "source", href: "https://github.com/MoldovanAlexandruVasile/Licenta" }],
+    links: [
+      {
+        id: "source",
+        href: "https://github.com/MoldovanAlexandruVasile/Licenta",
+      },
+    ],
   },
 ];
